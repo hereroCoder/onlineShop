@@ -1,0 +1,5 @@
+import {cobra,stasoft,washingpowder} from '../assets/images/cleaning'
+import {blacklabel,chibuku,huntersgold,ironbrew,oros,sparletta,sparletta2,stlouis,wildisland} from '../assets/images/drinks'
+import {cobra,stasoft,washingpowder} from '../assets/images/cleaning'
+import {cobra,stasoft,washingpowder} from '../assets/images/cleaning'
+import {cobra,stasoft,washingpowder} from '../assets/images/cleaning'
