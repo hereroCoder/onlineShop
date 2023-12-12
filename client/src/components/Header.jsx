@@ -52,21 +52,21 @@ const Header = () => {
 
       </div>
       <nav className={`flex flex-col sm:hidden fixed justify-center gap-6 ${open?'right-0':'right-[-200vw]'} top-20 w-2/4 z-50 bg-white items-center py-4`}>
-        <a href="#" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Cleaning</a>
-        <a href="#" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
-        <a href="#" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
-        <a href="#" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Snacks</a>
-        <a href="#" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Dry Foods</a>
+        <a href="#cleaning" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Cleaning</a>
+        <a href="#skincare" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
+        <a href="#drinks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
+        <a href="#snacks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Snacks</a>
+        <a href="#foods" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Dry Foods</a>
       </nav>
       
 
       {/* bottom */}
       <nav className='hidden sm:flex justify-center items-center gap-6'>
-        <a href="#" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Cleaning</a>
-        <a href="#" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
-        <a href="#" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
-        <a href="#" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Snacks</a>
-        <a href="#" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Dry Foods</a>
+        <a href="#cleaning" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Cleaning</a>
+        <a href="#skincare" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
+        <a href="#drinks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
+        <a href="#snacks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Snacks</a>
+        <a href="#foods" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Dry Foods</a>
       </nav>
 
     </header>

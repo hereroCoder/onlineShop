@@ -34,7 +34,7 @@ const Footer = () => {
       {/* Copyrights */}
       <div className='flex justify-center items-center gap-1'>
         <FontAwesomeIcon icon={faCopyright} />
-        <p>2023 All rights reserved</p>
+        <p>2023. All rights reserved</p>
       </div>
      
     </footer>
