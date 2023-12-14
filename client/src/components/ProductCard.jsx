@@ -10,7 +10,7 @@ const ProductCard = (props) => {
         <p className="leading-6">{props.name}</p>
         <p className="leading-6">{props.size}</p>
         <p className="leading-6 font-semibold">$ {props.price}</p>
-        <button className="invisible bg-green-600 p-2 rounded text-sm font-semibold group-hover:visible hover:text-white duration-300" onClick={()=>addItem(props)}> ADD TO CART</button>
+        <button className="invisible bg-green-600 p-2 rounded text-sm font-semibold group-hover:visible duration-300 text-white" onClick={()=>addItem(props)}> ADD TO CART</button>
       </div>
       
    

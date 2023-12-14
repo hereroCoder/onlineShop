@@ -5,7 +5,9 @@ import SkinCare from './sections/SkinCare'
 import DryFoods from './sections/DryFoods'
 import Snacks from './sections/Snacks'
 import Drinks from './sections/Drinks'
-import Cart from './components/Cart'
+import Hero from './components/Hero'
+import Newsletter from './components/Newsletter'
+
 import { CartProvider } from 'react-use-cart'
 
 
@@ -17,12 +19,13 @@ const App = () => {
     <main>
       <CartProvider>
         <Header/>
-        <Cart/>
+        <Hero/>
         <SkinCare/>
         <Snacks/>
         <Drinks/>
         <DryFoods/>
         <Household/>
+        <Newsletter/>
         <Footer/>
 
       </CartProvider>
