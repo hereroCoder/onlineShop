@@ -16,10 +16,13 @@ This online shop is a nostalgic journey tailored for those living overseas, seek
 
 ## Technologies Used
 
+- HTML
+- CSS
+- JavaScript
+- React.js
 - Vite
-  
 - Tailwind CSS
-  
+- Google Fonts
 - Font Awesome
 
 ## Contributions
