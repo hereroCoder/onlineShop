@@ -13,10 +13,12 @@ const Hero = () => {
         </div>
         
         <div className='text-center text-lg leading-10'>
+         
           <h2 className='font-bold text-6xl'>Select a Holiday Combo</h2>
           <p className='text-4xl font-bold'>Save upto 70% off</p>
           <p>No code neeeded, price as marked</p>
           <button className='bg-red-600 px-8 py-2 rounded-full text-white hover:animate-bounce hover:font-bold'>Shop Now <FontAwesomeIcon icon={faArrowRight} /></button>
+           <p className='text-sm'>Taste of Southren Africa in the UK</p>
 
         </div>
         
