@@ -23,6 +23,10 @@ This online shop is a nostalgic journey tailored for those living overseas, seek
 - Vite
 - Tailwind CSS
 - Google Fonts
+
+https://github.com/hereroCoder/onlineShop/assets/83869107/f6c8e3db-9f77-4ec7-b6bd-2fce4f51624e
+
+
 - Font Awesome
 
 ## Contributions
