@@ -6,7 +6,7 @@ import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
 const Hero = () => {
   return (
-    <section className="container" id='hero'>
+    <section id='hero'>
       <div className='flex justify-center items-center flex-col md:flex-row'>
         <div>
           <img src={combo} alt="" className='w-30 m-2 rounded-2xl'/>

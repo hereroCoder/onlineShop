@@ -1,7 +1,7 @@
 
 const Newsletter = () => {
   return (
-    <section className="container flex flex-col justify-around items-center text-center py-10 gap-4 bg-slate-100">
+    <section className="flex flex-col justify-around items-center text-center py-10 gap-4 bg-slate-100">
       <h3 className="font-bold text-lg  text-center">Subcribe to get Weekly Coupons</h3>
       <div className="flex justify-between items-center border-2 pl-2  rounded-full md:w-2/5">
         <input type="email" required placeholder="Enter your email" className="outline-none  bg-slate-100" />

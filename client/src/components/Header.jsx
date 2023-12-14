@@ -92,7 +92,7 @@ const Header = () => {
       {/* cart content */}
       {
         theCart?(
-          <div className='flex fixed justify-star w-full gap-4 h-screen z-50 bg-white py-4 right-0 top-0'>
+          <div className='flex fixed justify-star w-full gap-4 h-screen z-50 bg-white py-4 right-0 top-0 overflow-scroll'>
              <Cart/>
               <FontAwesomeIcon icon={faXmark} className='text-3xl w-4 text-gray-600 hover:cursor-pointer' onClick={openCart}/>
           </div>

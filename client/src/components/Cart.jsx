@@ -35,7 +35,7 @@ const Cart = () => {
                     {item.quantity}
                     <button className="bg-green-500 px-2 ml-2 rounded font-bold text-white" onClick={()=>(updateItemQuantity(item.id, item.quantity+1))}>+</button>
                   </td>
-                   <td className="py-8 px-2 font-semibold"> £{item.price}</td>
+                   <td className="py-8 px-2 font-semibold"> £{item.price.toFixed(2)}</td>
 
                   {/* delete button per item */}
                   {/* <td>
@@ -69,7 +69,7 @@ const Cart = () => {
 
         
 
-          <p>Total: <span  className="font-semibold"> £ {cartTotal}</span></p>
+          <p>Total: <span  className="font-semibold"> £ {cartTotal.toFixed(2)}</span></p>
           
          
 

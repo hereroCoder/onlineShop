@@ -67,137 +67,137 @@ export const foods =[
     id:'1',
     imgURL:bakedBeans,
     name: "Koo Baked Beans",
-    size: "200ml",
-    price:3
+    size: "410g",
+    price:1.80
   },
   {
     id:'2',
     imgURL:brownSugar,
     name: "Crystal Brown Sugar",
     size: "5kg",
-    price:3.50
+    price:14.50
   },
   {
     id:'3',
     imgURL:cannedBeef,
-    name: "Texan Conned Beef",
-    size: "500g",
-    price:2.99
+    name: "Texan Corned Beef",
+    size: "350g",
+    price:3.40
   },
   {
     id:'4',
     imgURL:cannedFish,
     name: "Lucky-Star Sardines",
-    size: "500g",
-    price:6.70
+    size: "350g",
+    price:2.70
   },
   {
     id:'5',
     imgURL:chakalaka,
     name: "Chakalaka",
-    size: "300ml",
-    price:2.99
+    size: "350ml",
+    price:2.10
   },
   {
     id:'6',
     imgURL:chickenspice,
     name: "Chicken Spice",
-    size: "300ml",
-    price:2.99
+    size: "50g",
+    price:2.50
   },
   {
     id:'7',
     imgURL:cookingOil,
     name: "Cooking Oil",
-    size: "300ml",
-    price:2.99
+    size: "lL",
+    price:2.95
   },
   {
     id:'8',
     imgURL:jikelele,
     name: "Jikelele seasoning",
-    size: "300ml",
-    price:2.99
+    size: "300g",
+    price:4.82
   },
   {
     id:'9',
     imgURL:macaroni,
     name: "Macaroni pasta",
-    size: "300ml",
-    price:2.99
+    size: "1kg",
+    price:2.39
   },
   {
     id:'10',
     imgURL:maizeMeal,
     name: "Iwiza Maize Meal",
-    size: "300ml",
-    price:2.99
+    size: "2.5kg",
+    price:5.00
   },
   {
     id:'11',
     imgURL:morvite,
     name: "Morvite",
-    size: "300ml",
-    price:2.99
+    size: "500g",
+    price:2.95
   },
 
   {
     id:'12',
     imgURL:spaghetti,
     name: "Spaghetti",
-    size: "300ml",
-    price:2.99
+    size: "1kg",
+    price:2.75
   },
   {
     id:'13',
     imgURL:tastic,
     name: "Tastic Rice",
     size: "2kg",
-    price:2.99
+    price:3.73
   },
   {
     id:'14',
     imgURL:whiteFlour,
     name: "White Plain Flour",
     size: "2kg",
-    price:2.99
+    price:2.00
   },
   {
     id:'51',
     imgURL:whiteSugar,
     name: "Crystal White Sugar",
     size: "2kg",
-    price:2.99
+    price:2.85
   },
  
   {
     id:'16',
     imgURL:butter,
     name: "Rama Butter",
-    size: "2kg",
-    price:2.99
+    size: "200g",
+    price:1.90
   },
 
   {
     id:'17',
     imgURL:portuguese,
     name: "Portuguese Spice",
-    size: "200g",
-    price:2.99
+    size: "50g",
+    price:2.50
   },
   {
     id:'18',
     imgURL:spiceforrice,
     name: "Spice for Rice",
-    size: "200g",
-    price:2.99
+    size: "50g",
+    price:2.50
   },
    {
     id:'19',
     imgURL:tomatosauce,
     name: "Tomato Sauce",
-    size: "500ml",
-    price:3.99
+    size: "250g",
+    price:3.55
   },
 ]
 
@@ -206,8 +206,8 @@ export const drinks =[
     id:'20',
     imgURL:amarula,
     name: "Amarula",
-    size: "200ml",
-    price:12
+    size: "1L",
+    price:18.00
   },
   {
     id:'21',
@@ -220,16 +220,16 @@ export const drinks =[
     id:'22',
     imgURL:huntersgold,
     name: "Hunters Gold Cider",
-    size: "300ml",
-    price:2.99
+    size: "330ml",
+    price:3.67
   },
 
    {
     id:'23',
     imgURL:ironbrew,
     name: "Ironbrew Soft drink",
-    size: "300ml",
-    price:2.99
+    size: "330ml",
+    price:2.10
   },
   
   {
@@ -237,50 +237,50 @@ export const drinks =[
     imgURL:oros,
     name: "Oros",
     size: "1L",
-    price:6.70
+    price:2.70
   },
  
   {
     id:'25',
     imgURL:sparletta,
     name: "Sparletta Cream-Soda",
-    size: "300ml",
-    price:2.99
+    size: "330ml",
+    price:2.20
   },
    {
     id:'26',
     imgURL:sparletta2,
     name: "Sparletta Lime",
-    size: "300ml",
-    price:2.99
+    size: "330ml",
+    price:2.20
   },
    {
     id:'27',
     imgURL:wildisland,
     name: "Wild-Island",
     size: "1L",
-    price:2.99
+    price:2.10
   },
    {
     id:'28',
     imgURL:lion,
     name: "Lion Beer",
-    size: "1L",
-    price:2.99
+    size: "330",
+    price:2.30
   },
    {
     id:'29',
     imgURL:stony,
     name: "Stoney Ginger Beer",
-    size: "300ml",
-    price:2.99
+    size: "330ml",
+    price:2.30
   },
   {
     id:'30',
     imgURL:tafel,
     name: "Tafel Beer",
-    size: "300ml",
-    price:2.99
+    size: "400ml",
+    price:2.65
   },
   
 ]
@@ -291,29 +291,29 @@ export const snacks =[
     id:'31',
     imgURL:eatsummore,
     name: "Eat-Summor Biscuits",
-    size: "500g",
-    price:3.50
+    size: "200g",
+    price:1.50
   },
   {
     id:'32',
     imgURL:marie,
     name: "Marie Biscuits",
-    size: "300g",
-    price:2.99
+    size: "200g",
+    price:2.00
   },
   {
     id:'33',
     imgURL:niknaks,
     name: "NikNaks Chips",
-    size: "100g",
-    price:1.70
+    size: "75g",
+    price:1.00
   },
   {
     id:'34',
     imgURL:simba,
     name: "Simba Chips",
-    size: "300g",
-    price:2.99
+    size: "120g",
+    price:2.90
   },
 ]
 
@@ -323,35 +323,35 @@ export const cleaning =[
     imgURL:cobra,
     name:"Cobra Floor Polish",
     size:"500g",
-    price:3.99
+    price:2.79
   },
   {
     id:'36',
     imgURL:stasoft,
     name:"StaSoft Fabric Softner",
-    size:"500g",
-    price:6.99
+    size:"1L",
+    price:3.00
   },
   {
     id:'37',
     imgURL:washingpowder,
     name:"MAQ Wahing Powder",
-    size:"500g",
-    price:7.99
+    size:"2kg",
+    price:5.40
   },
   {
     id:'38',
     imgURL:doom,
     name:"Doom Spray",
     size:"500g",
-    price:7.99
+    price:1.20
   },
   {
     id:'39',
     imgURL:handyandy,
     name:"Handy Andy",
-    size:"500g",
-    price:7.99
+    size:"300ml",
+    price:3.50
   },
 ]
 
@@ -361,49 +361,49 @@ export const skincare =[
     imgURL:clere,
     name: "Clere Lotion",
     size: "400ml",
-    price:2.50
+    price:4.80
   },
   {
     id:'41',
     imgURL:foambath,
     name: "Shower Gel",
-    size: "400ml",
-    price:4.50
+    size: "200ml",
+    price:3.50
   },
   {
     id:'42',
     imgURL:ingrams,
     name: "Camphor Body Cream",
-    size: "400ml",
-    price:2.50
+    size: "500ml",
+    price:5.50
   },
   {
     id:'43',
     imgURL:lifebouy,
     name: "Lifebouy Bar Soap",
-    size: "200g",
-    price:1.50
+    size: "100g",
+    price:1.25
   },
   {
     id:'44',
     imgURL:lux,
     name: "Lux Soap",
-    size: "200g",
-    price:1.60
+    size: "100g",
+    price:1.20
   },
   {
     id:'45',
     imgURL:shield,
     name: "Shield Deodarant",
     size: "50ml",
-    price:1.40
+    price:1.95
   },
   {
     id:'46',
     imgURL:sunlightbar,
     name: "Sunlight Bar Soap",
     size: "200g",
-    price:1.60
+    price:2.80
     
   },
 ]
