@@ -12,6 +12,6 @@
   }
   
   h2{
-    @apply font-playfair text-lg py-4
+    @apply font-playfair text-2xl pb-4
   }
 }

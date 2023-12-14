@@ -4,7 +4,7 @@ import ProductCard from '../components/ProductCard'
 const Drinks = () => {
   return (
     <section id='drinks' className='container'>
-      <div className="border-b border-gray-200 flex flex-col justify-center items-center pb-2">
+      <div className="border-b border-gray-200 flex flex-col justify-center items-center pb-2 mb-20">
         <h2>Cold Drinks & Alcohol</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {drinks.map((product)=>(

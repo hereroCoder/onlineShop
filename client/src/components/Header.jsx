@@ -22,7 +22,7 @@ const Header = () => {
 
 
   return (
-    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 bg-white'>
+    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 bg-white text-lg'>
       {/* top */}
       <div className='bg-red-600 py-2'>
         <p className='text-center font-semibold text-lg text-gray-100 capitalize tracking-widest animate-bounce'>(1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p>
@@ -40,27 +40,29 @@ const Header = () => {
         {/* search */}
         <div className='hidden sm:flex justify-between px-8 py-2 border-2 border-gray-200 bg-gray-100 items-center w-3/5 rounded-full'>
           <input type="text" placeholder='Search' className='outline-none bg-transparent w-2/3'/>
-         <FontAwesomeIcon icon={faMagnifyingGlass} className='text-gray-300' />
+         <FontAwesomeIcon icon={faMagnifyingGlass} className='text-gray-300 hover:cursor-pointer' />
         </div>
 
         {/* account and cart */}
-        <div className='flex gap-4'>
-          <div className='flex flex-col justify-center items-center'>
-            <FontAwesomeIcon icon={faUser} className='text-gray-600 text-lg' />
+        <div className='flex gap-5'>
+          <div className='flex flex-col justify-center items-center hover:cursor-pointer'>
+            <FontAwesomeIcon icon={faUser} className='text-gray-600 text-2xl' />
             <p className='hidden sm:block text-sm'>Account</p>
           </div>
-           <div className='flex flex-col justify-center items-center'>
-            <p className='bg-red-500 text-white font-bold w-4 h-4 rounded text-center text-sm top-10 fixed'>{totalItems}</p>
-            <FontAwesomeIcon icon={faCartShopping} className='text-gray-600 text-lg' onClick={openCart} />
+           <div className='flex flex-col justify-center items-center hover:cursor-pointer' onClick={openCart}>
+            <div>
+              <p className='bg-red-500 text-white font-bold w-4 h-4 rounded-full absolute flex items-center justify-center p-3 text-sm'>{totalItems}</p>
+            </div>
+            <FontAwesomeIcon icon={faCartShopping} className='text-gray-600 text-2xl'  />
             <p className='hidden sm:block text-sm'>Cart</p>
           </div>
 
         {/* hamburger */}
           {open?(
-            <FontAwesomeIcon icon={faXmark} className='text-3xl right-2 z-50 sm:hidden w-4 text-gray-600' onClick={showNav}/>
+            <FontAwesomeIcon icon={faXmark} className='text-3xl right-2 z-50 sm:hidden w-4 text-gray-600 hover:cursor-pointer' onClick={showNav}/>
 
           ):(
-            <FontAwesomeIcon icon={faBars} className='text-3xl text-gray-600 right-2 z-50 sm:hidden w-4' onClick={showNav}/>
+            <FontAwesomeIcon icon={faBars} className='text-3xl text-gray-600 right-2 z-50 sm:hidden w-4 hover:cursor-pointer' onClick={showNav}/>
           )
           }
           
@@ -90,8 +92,9 @@ const Header = () => {
       {/* cart content */}
       {
         theCart?(
-          <div className='flex flex-col fixed justify-center gap-6 top-20 w-2/4 z-50 bg-white items-center py-4 right-0'>
+          <div className='flex fixed justify-star w-full gap-4 h-screen z-50 bg-white py-4 right-0 top-0'>
              <Cart/>
+              <FontAwesomeIcon icon={faXmark} className='text-3xl w-4 text-gray-600 hover:cursor-pointer' onClick={openCart}/>
           </div>
          
         ):(
@@ -105,4 +108,4 @@ const Header = () => {
 
 export default Header
 
-// todo: animate top part
+// id scrolling

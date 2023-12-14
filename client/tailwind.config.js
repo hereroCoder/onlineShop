@@ -15,10 +15,6 @@ export default {
         'playfair': ['Playfair Display', 'sans-serif'],
         'barlow':  ['Barlow', 'sans-serif']
       },
-
-      backgroundImage: {
-        'backImg': "url('../public/background.jpg')",
-      },
   
     },
   },

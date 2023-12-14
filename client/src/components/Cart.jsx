@@ -17,11 +17,11 @@ const Cart = () => {
   if (isEmpty) return <h1 className="text-center font-semibold">Your Cart is Empty</h1>
 
   return (
-    <section className="py-4 container">
+    <section className="py-4 container font-lg">
       <div className="flex flex-col justify-center items-center pr-2">
         {/* items */}
         <div className="relative overflow-x-auto">
-          <table className="w-full text-sm text-left text-gray-700">
+          <table className="w-full text-left text-gray-700">
            {items.map((item,index)=>{
             return(
                <tbody className=" border-gray-200 border">
@@ -29,19 +29,21 @@ const Cart = () => {
                   <td>
                     <img src={item.imgURL} alt="" className="h-14" />
                   </td>
-                  <td className="py-8 px-2">{item.name}</td>
-                  <td className="py-8 px-2">{item.size}</td>
-                  <td className="py-8 px-2">{item.price}</td>
+                  <td className="py-8 px-2">{item.name} ({item.size}) </td>
                   <td className="py-8 px-2 flex">
-                    <button className="bg-gray-300 px-2 mr-2 rounded" onClick={()=>(updateItemQuantity(item.id,item.quantity-1))}>-</button>
+                    <button className="bg-red-500 px-2 mr-2 rounded font-bold text-white" onClick={()=>(updateItemQuantity(item.id,item.quantity-1))}>-</button>
                     {item.quantity}
-                    <button className="bg-gray-300 px-2 ml-2 rounded" onClick={()=>(updateItemQuantity(item.id, item.quantity+1))}>+</button></td>
-                  <td>
+                    <button className="bg-green-500 px-2 ml-2 rounded font-bold text-white" onClick={()=>(updateItemQuantity(item.id, item.quantity+1))}>+</button>
+                  </td>
+                   <td className="py-8 px-2 font-semibold"> £{item.price}</td>
+
+                  {/* delete button per item */}
+                  {/* <td>
                     <button onClick={()=>(removeItem(item.id))}>
                       <FontAwesomeIcon icon={faTrashCan} className="mr-2 hover:text-red-500 hover:cursor-pointer"/>
                     </button>
                     
-                    </td>
+                    </td> */}
                 </tr>
 
               </tbody>
@@ -55,17 +57,19 @@ const Cart = () => {
           </table>
         </div>
         {/* total, checkout, and clear */}
-        <div className="flex items-center gap-6">
-          <h2>Total: <span  className="font-semibold"> £ {cartTotal}</span></h2>
+        <div className="flex items-center gap-6 pt-2">
+          <button className="border font-semibold border-red-500 text-red-500 px-2 py-1 rounded hover:font-bold" onClick={()=>(
+            emptyCart()
+          )} >Empty Cart</button>
 
-           <button className="p-2 bg-green-200 rounded hover:font-bold" onClick={()=>(
+           <button className="px-2 py-1 bg-green-200 rounded hover:font-bold" onClick={()=>(
             alert('Sorry, checkout page not implemented yet.')
           )}>Checkout</button>
          
 
-          <button className="bg-red-200 p-2 rounded hover:font-bold" onClick={()=>(
-            emptyCart()
-          )} >Clear Cart</button>
+        
+
+          <p>Total: <span  className="font-semibold"> £ {cartTotal}</span></p>
           
          
 
