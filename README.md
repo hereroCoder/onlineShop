@@ -16,7 +16,7 @@ This online shop is a nostalgic journey tailored for those living overseas, seek
 
 ## Technologies Used
 
-- Vite(React framework)
+- Vite
   
 - Tailwind CSS
   
