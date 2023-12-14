@@ -1,4 +1,4 @@
-# Rediscover Southern African Goodies - An Online Nostalgia Shop
+# Southern African Goodies Online Shop
 
 This online shop is a nostalgic journey tailored for those living overseas, seeking to rediscover the taste of Southern African goodies. Built using Vite React, Tailwind CSS, and Font Awesome icons, this single-page website is highly responsive, featuring a functional cart and a mobile-friendly hamburger menu.
 
