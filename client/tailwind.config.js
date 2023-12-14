@@ -4,6 +4,11 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  variants: {
+    extend: {
+        display: ["group-hover"],
+    },
+},
   theme: {
     extend: {
       fontFamily:{

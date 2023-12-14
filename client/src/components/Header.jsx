@@ -3,13 +3,16 @@ import { faBars, faXmark,faMagnifyingGlass,faUser,faCartShopping } from "@fortaw
 import { useState } from 'react';
 
 
+
 const Header = () => {
   const [open,setOpen] = useState(false);
 
   const showNav = ()=>{
     setOpen(!open)
   };
-  
+
+
+
   return (
     <header className='flex flex-col justify-center pb-6 gap-3 sticky top-0 bg-white'>
       {/* top */}
@@ -34,6 +37,7 @@ const Header = () => {
             <p className='hidden sm:block text-sm'>Account</p>
           </div>
            <div className='flex flex-col justify-center items-center'>
+
             <FontAwesomeIcon icon={faCartShopping} className='text-gray-600 text-lg' />
             <p className='hidden sm:block text-sm'>Cart</p>
           </div>
@@ -52,7 +56,7 @@ const Header = () => {
 
       </div>
       <nav className={`flex flex-col sm:hidden fixed justify-center gap-6 ${open?'right-0':'right-[-200vw]'} top-20 w-2/4 z-50 bg-white items-center py-4`}>
-        <a href="#cleaning" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Cleaning</a>
+        <a href="#cleaning" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Household</a>
         <a href="#skincare" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
         <a href="#drinks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
         <a href="#snacks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Snacks</a>
@@ -62,7 +66,7 @@ const Header = () => {
 
       {/* bottom */}
       <nav className='hidden sm:flex justify-center items-center gap-6'>
-        <a href="#cleaning" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Cleaning</a>
+        <a href="#cleaning" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Household</a>
         <a href="#skincare" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
         <a href="#drinks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
         <a href="#snacks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Snacks</a>

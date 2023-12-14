@@ -6,7 +6,9 @@
   *{
     margin:0;
     padding:0;
+    scroll-behavior: smooth;
     @apply font-barlow;
+
   }
   h2{
     @apply font-playfair text-lg py-4
