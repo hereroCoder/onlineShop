@@ -3,8 +3,8 @@ import {skincare } from "../constants/index"
 
 const SkinCare = () => {
   return (
-    <section id='skincare'>
-      <div className="border-b border-gray-200 flex flex-col justify-center items-center pb-2 my-20">
+    <section id='skincare' className='pt-40'>
+      <div className="border-b border-gray-200 flex flex-col justify-center items-center">
         <h2>Skin Care</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {skincare.map((product)=>(

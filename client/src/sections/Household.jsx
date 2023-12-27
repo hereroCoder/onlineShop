@@ -5,7 +5,7 @@ import ProductCard
 
 const Household = () => {
   return (
-    <section id='cleaning'>
+    <section id='cleaning' className='pt-40'>
       <div className="border-b border-gray-200 flex flex-col justify-center items-center pb-10">
         <h2>Household</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
