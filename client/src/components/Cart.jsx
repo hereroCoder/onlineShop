@@ -57,6 +57,7 @@ const Cart = () => {
           </table>
         </div>
         {/* total, checkout, and clear */}
+
         <div className="flex items-center gap-6 pt-2">
           <button className="border font-semibold border-red-500 text-red-500 px-2 py-1 rounded hover:font-bold" onClick={()=>(
             emptyCart()
@@ -66,8 +67,6 @@ const Cart = () => {
             alert('Sorry, checkout page not implemented yet.')
           )}>Checkout</button>
          
-
-        
 
           <p>Total: <span  className="font-semibold"> £ {cartTotal.toFixed(2)}</span></p>
           
@@ -80,7 +79,3 @@ const Cart = () => {
 }
 
 export default Cart
-
-
-// todo: 1. add scroll to see all items
-// 2. format money

@@ -112,13 +112,7 @@ export const foods =[
     size: "lL",
     price:2.95
   },
-  {
-    id:'8',
-    imgURL:jikelele,
-    name: "Jikelele seasoning",
-    size: "300g",
-    price:4.82
-  },
+
   {
     id:'9',
     imgURL:macaroni,
@@ -202,13 +196,7 @@ export const foods =[
 ]
 
 export const drinks =[
-  {
-    id:'20',
-    imgURL:amarula,
-    name: "Amarula",
-    size: "1L",
-    price:18.00
-  },
+
   {
     id:'21',
     imgURL:fanta,
@@ -231,22 +219,8 @@ export const drinks =[
     size: "330ml",
     price:2.10
   },
-  
-  {
-    id:'24',
-    imgURL:oros,
-    name: "Oros",
-    size: "1L",
-    price:2.70
-  },
+
  
-  {
-    id:'25',
-    imgURL:sparletta,
-    name: "Sparletta Cream-Soda",
-    size: "330ml",
-    price:2.20
-  },
    {
     id:'26',
     imgURL:sparletta2,
@@ -301,13 +275,7 @@ export const snacks =[
     size: "200g",
     price:2.00
   },
-  {
-    id:'33',
-    imgURL:niknaks,
-    name: "NikNaks Chips",
-    size: "75g",
-    price:1.00
-  },
+
   {
     id:'34',
     imgURL:simba,

@@ -3,10 +3,10 @@ import {skincare } from "../constants/index"
 
 const SkinCare = () => {
   return (
-    <section id='skincare' className='pt-40'>
-      <div className="border-b border-gray-200 flex flex-col justify-center items-center">
+    <section id='skincare' className='pt-40 w-full'>
+      <div className="flex flex-col justify-center items-center">
         <h2>Skin Care</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           {skincare.map((product)=>(
             <ProductCard key={product.name}{...product}/>
           ))}

@@ -62,7 +62,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faXmark} className='text-3xl right-2 z-50 sm:hidden w-4 text-gray-600 hover:cursor-pointer' onClick={showNav}/>
 
           ):(
-            <FontAwesomeIcon icon={faBars} className='text-3xl text-gray-600 right-2 z-50 sm:hidden w-4 hover:cursor-pointer' onClick={showNav}/>
+            <FontAwesomeIcon icon={faBars} className='text-3xl text-gray-600 right-2 z-50 sm:hidden w-4 hover:cursor-pointer ' onClick={showNav}/>
           )
           }
           
@@ -70,7 +70,7 @@ const Header = () => {
         </div>
 
       </div>
-      <nav className={`flex flex-col sm:hidden fixed justify-center gap-6 ${open?'right-0':'right-[-200vw]'} top-20 w-2/4 z-30 bg-white items-center py-4`}>
+      <nav className={`flex flex-col sm:hidden fixed justify-center gap-6 ${open?'right-0':'right-[-200%]'} top-0 w-3/4 h-full z-5 bg-white items-center`}>
         <a href="#cleaning" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Household</a>
         <a href="#skincare" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
         <a href="#drinks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
@@ -80,7 +80,7 @@ const Header = () => {
       
 
       {/* bottom */}
-      <nav className='hidden sm:flex justify-center items-center gap-6'>
+      <nav className='hidden sm:flex justify-center w-2/4 items-center gap-6'>
         <a href="#cleaning" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Household</a>
         <a href="#skincare" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
         <a href="#drinks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
