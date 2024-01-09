@@ -15,6 +15,12 @@ export default {
         'playfair': ['Playfair Display', 'sans-serif'],
         'barlow':  ['Barlow', 'sans-serif']
       },
+      colors:{
+      'blue': 'var(--blue)',
+      'white': 'var(--white)',
+      'black':'var(--black)',
+      'greenish':'var(--greenish)'
+      }
   
     },
   },

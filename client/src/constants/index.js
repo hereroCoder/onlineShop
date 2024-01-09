@@ -113,7 +113,7 @@ export const foods =[
    { 
     id:'3',
     imgURL:bbqspice,
-    name: "Robertson BBQ SPICE",
+    name: "Robertson Bbq Spice",
     size: "65g",
     price:2.80
   },
@@ -177,28 +177,28 @@ export const foods =[
    {
     id:'70', 
     imgURL:creamer,
-    name: "ELLIS BROWN COFFEE CREAMER",
+    name: "Ellis Brown Coffee Creamer",
     size: "750G",
     price:2.95
   },
    {
     id:'12',
     imgURL:fiveroses,
-    name: "FIVE ROSES loose tea",
+    name: "Five Roses loose tea",
     size: "250g",
     price:1.95
   },
    {
     id:'13',
     imgURL:freshpak,
-    name: "FRESHPAK teabags",
+    name: "Freshpak teabags",
     size: "80",
     price:2.95
   },
    {
     id:'14',
     imgURL:frisco,
-    name: "FRISCO",
+    name: "Frisco",
     size: "250g",
     price:3.95
   },
@@ -220,7 +220,7 @@ export const foods =[
   {
     id:'17',
     imgURL:mayo,
-    name: "MAYONAISE",
+    name: "Mayonaise",
     size: "750g",
     price:6.00
   },
@@ -339,7 +339,7 @@ export const drinks =[
   {
     id:'33',
     imgURL:ceres,
-    name: "CERES juice",
+    name: "Ceres juice",
     size: "200ml",
     price:4.50
   },
@@ -440,7 +440,7 @@ export const snacks =[
   {
     id:'46',
     imgURL:eatsummore,
-    name: "EEt Sum mor Biscuits",
+    name: "Eet Sum mor Biscuits",
     size: "200g",
     price:1.50
   },
@@ -455,14 +455,14 @@ export const snacks =[
   {
     id:'48',
     imgURL:simbaMexican,
-    name: "Simba MEXICAN chilli",
+    name: "Simba Mexican chilli",
     size: "125g",
     price:1.99
   },
   {
     id:'49',
     imgURL:simbaSv,
-    name: "Simba SALT&VINEGAR",
+    name: "Simba Salt & Vinegar",
     size: "125g",
     price:1.99
   },
@@ -476,14 +476,14 @@ export const snacks =[
     {
     id:'51',
     imgURL:tennis,
-    name: "Bakers TENNIS BISCUITS",
+    name: "Bakers Tennis Biscuits",
     size: "200g",
     price:2.90
   },
     {
     id:'52',
     imgURL:topper,
-    name: "TOPPER BISCUITS",
+    name: "Topper Biscuits",
     size: "125g",
     price:0.95
   },

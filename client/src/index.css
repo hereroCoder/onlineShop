@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --blue: #00539F;
+  --white: #fff;
+  --black: #333;
+  --greenish: #f8f4ec;
+}
+
 @layer base{
   *{
     margin:0;
