@@ -26,7 +26,7 @@ const Header = () => {
       {/* top */}
       <div className='bg-red-600 py-2'>
         <p className='text-center font-semibold text-lg text-gray-100 capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p>
-      </div>
+      </div> 
 
       {/* middle */}
       <div className='flex justify-between px-4 pt-2 items-center'>
