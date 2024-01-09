@@ -27,6 +27,7 @@ import chakalakaSoup from '../assets/images/foods/chakalaka soup.png'
 import chakalaka from '../assets/images/foods/chakalaka.jpeg'
 import chickenspice from '../assets/images/foods/chickenspice.jpeg'
 import cookingOil from '../assets/images/foods/cookingOil.jpeg'
+import creamer from '../assets/images/foods/creamer.png'
 import fiveroses from '../assets/images/foods/fiverooses.png'
 import freshpak from '../assets/images/foods/freshpak.png'
 import frisco from '../assets/images/foods/frisco.jpg'
@@ -84,6 +85,8 @@ import cobra from '../assets/images/cleaning/cobra.jpeg'
 import doom from '../assets/images/cleaning/doom.jpeg'
 import handyandy from '../assets/images/cleaning/handyandy.jpeg'
 import jik from '../assets/images/cleaning/jik.png'
+import kiwi from '../assets/images/cleaning/kiwi.png'
+import matches from '../assets/images/cleaning/matches.jpg'
 import mosquitoQ from '../assets/images/cleaning/mosquito-coil.png'
 import savlon from '../assets/images/cleaning/savlon.png'
 import stasoft from '../assets/images/cleaning/stasoft.jpeg'
@@ -95,24 +98,24 @@ export const foods =[
    { 
     id:'1',
     imgURL:atchar,
-    name: "Atchar",
-    size: "410g",
-    price:1.80
+    name: "pakco hot Atchar",
+    size: "385g",
+    price:7.80
   },
   { 
     id:'2',
     imgURL:bakedBeans,
     name: "Koo Baked Beans",
     size: "410g",
-    price:1.80
+    price:2.80
   },
 
    { 
     id:'3',
     imgURL:bbqspice,
-    name: "BBQ SPICE",
-    size: "410g",
-    price:1.80
+    name: "Robertson BBQ SPICE",
+    size: "65g",
+    price:2.80
   },
 
   {
@@ -120,35 +123,35 @@ export const foods =[
     imgURL:brownSugar,
     name: "Crystal Brown Sugar",
     size: "5kg",
-    price:14.50
+    price:6.50
   },
   {
     id:'5',
     imgURL:butter,
     name: "Rama Butter",
-    size: "200g",
-    price:1.90
+    size: "500g",
+    price:3.90
   },
   {
     id:'6',
     imgURL:cannedBeef,
-    name: "Texan Corned Beef",
+    name: "Texan Corned meat",
     size: "350g",
-    price:3.40
+    price:5.40
   },
   {
     id:'7',
     imgURL:cannedFish,
-    name: "Lucky-Star Sardines",
+    name: "Lucky-Star Pilchards",
     size: "350g",
-    price:2.70
+    price:3.95
   },
   {
     id:'8',
     imgURL:chakalakaSoup,
-    name: "chakalaka soup",
-    size: "350g",
-    price:2.70
+    name: "knorr chakalaka soup",
+    size: "50g",
+    price:1.65
   },
   {
     id:'9',
@@ -161,114 +164,121 @@ export const foods =[
     id:'10',
     imgURL:chickenspice,
     name: "Chicken Spice",
-    size: "50g",
-    price:2.50
+    size: "65g",
+    price:2.80
   },
   {
     id:'11',
     imgURL:cookingOil,
     name: "Cooking Oil",
     size: "lL",
+    price:3.95
+  },
+   {
+    id:'70', 
+    imgURL:creamer,
+    name: "ELLIS BROWN COFFEE CREAMER",
+    size: "750G",
     price:2.95
   },
    {
     id:'12',
     imgURL:fiveroses,
-    name: "FIVE ROSES",
-    size: "lL",
-    price:2.95
+    name: "FIVE ROSES loose tea",
+    size: "250g",
+    price:1.95
   },
    {
     id:'13',
     imgURL:freshpak,
-    name: "FRESHPAK",
-    size: "lL",
+    name: "FRESHPAK teabags",
+    size: "80",
     price:2.95
   },
    {
     id:'14',
     imgURL:frisco,
     name: "FRISCO",
-    size: "lL",
-    price:2.95
+    size: "250g",
+    price:3.95
   },
 
   {
     id:'15',
     imgURL:macaroni,
-    name: "Macaroni pasta",
-    size: "1kg",
-    price:2.39
+    name: "Fattis & Monis Macaroni",
+    size: "3kg",
+    price:6.95
   },
   {
     id:'16',
     imgURL:maizeMeal,
-    name: "Iwiza Maize Meal",
-    size: "2.5kg",
-    price:5.00
+    name: "super a1 Maize Meal",
+    size: "12.5kg",
+    price:8.00
   },
   {
     id:'17',
     imgURL:mayo,
     name: "MAYONAISE",
-    size: "2.5kg",
-    price:5.00
+    size: "750g",
+    price:6.00
   },
   {
     id:'18',
     imgURL:minestrone,
-    name: "Minestrone",
-    size: "2.5kg",
-    price:5.00
+    name: "Knorr Minestrone soup",
+    size: "50g",
+    price:1.65
   },
   {
     id:'19',
     imgURL:morvite,
     name: "Morvite",
-    size: "500g",
+    size: "1kg",
     price:2.95
   },
    {
     id:'20',
     imgURL:peanut,
-    name: "peanut",
-    size: "500g",
-    price:2.95
+    name: "Black cat peanut smooth",
+    size: "400g",
+    price:7.95
   },
    {
     id:'21',
     imgURL:polony,
-    name: "polony",
-    size: "500g",
-    price:2.95
+    name: "senn foods polony",
+    size: "1kg",
+    price:2.99
   },
    {
     id:'22',
     imgURL:portuguese,
     name: "Portuguese Spice",
     size: "50g",
-    price:2.50
+    price:1.50
   },
     {
     id:'23',
     imgURL:rice,
-    name: "rice",
-    size: "50g",
-    price:2.50
+    name: "tastic rice",
+    size: "5kg",
+    price:6.50
   },
     {
     id:'24',
     imgURL:ricoffy,
-    name: "ricoffy",
-    size: "50g",
-    price:2.50
+    name: "nescafe ricoffy",
+    size: "250g",
+    price:3.50
   },
 
   {
     id:'25',
     imgURL:spaghetti,
-    name: "Spaghetti",
-    size: "1kg",
+    name: "Fattis & monis Spaghetti",
+    size: "500g",
     price:2.75
   },
   {
@@ -276,42 +286,42 @@ export const foods =[
     imgURL:spiceforrice,
     name: "Spice for Rice",
     size: "50g",
-    price:2.50
+    price:1.50
   },
    {
     id:'27',
     imgURL:stock,
     name: "Stork butter",
-    size: "50g",
-    price:2.50
+    size: "1kg",
+    price:4.50
   },
   {
     id:'28',
     imgURL:tastic,
     name: "Tastic Rice",
-    size: "2kg",
-    price:3.73
+    size: "10kg",
+    price:13.95
   },
     {
     id:'29',
     imgURL:tomatosauce,
     name: "Tomato Sauce",
-    size: "250g",
-    price:3.55
+    size: "700ml",
+    price:5.55
   },
   {
     id:'30',
     imgURL:whiteFlour,
     name: "White Plain Flour",
-    size: "2kg",
-    price:2.00
+    size: "2.5kg",
+    price:3.00
   },
   {
     id:'31',
     imgURL:whiteSugar,
     name: "Crystal White Sugar",
-    size: "2kg",
-    price:2.85
+    size: "5kg",
+    price:6.85
   },
  
   
@@ -324,21 +334,21 @@ export const drinks =[
     imgURL:amarula,
     name: "amarula",
     size: "2L",
-    price:4.50
+    price:8.50
   },
   {
     id:'33',
     imgURL:ceres,
-    name: "CERES",
-    size: "2L",
+    name: "CERES juice",
+    size: "200ml",
     price:4.50
   },
   {
     id:'34',
     imgURL:chill,
-    name: "chill",
+    name: "chopies chill orange",
     size: "2L",
-    price:4.50
+    price:3.50
   },
 
   {
@@ -351,16 +361,16 @@ export const drinks =[
   {
     id:'36',
     imgURL:fruitree,
-    name: "fruitree",
-    size: "2L",
-    price:4.50
+    name: "fruitree juice",
+    size: "1L",
+    price:3.50
   },
   {
     id:'37',
     imgURL:huntersgold,
     name: "Hunters Gold Cider",
     size: "330ml",
-    price:3.67
+    price:3.00
   },
 
    {
@@ -368,7 +378,7 @@ export const drinks =[
     imgURL:ironbrew,
     name: "Ironbrew Soft drink",
     size: "330ml",
-    price:2.10
+    price:3.95
   },
     {
     id:'39',
@@ -381,8 +391,8 @@ export const drinks =[
     id:'40',
     imgURL:oroso,
     name: "Oros",
-    size: "330",
-    price:2.30
+    size: "2L",
+    price:4.30
   },
 
  
@@ -391,14 +401,14 @@ export const drinks =[
     imgURL:sparletta2,
     name: "Sparletta Lime",
     size: "330ml",
-    price:2.20
+    price:3.95
   },
   {
     id:'42',
     imgURL:stony,
     name: "Stoney Ginger Beer",
     size: "330ml",
-    price:2.30
+    price:3.95
   },
    {
     id:'43',
@@ -422,7 +432,7 @@ export const snacks =[
    {
     id:'45',
     imgURL:choicea,
-    name: "choice assorted",
+    name: "baker choice assorted",
     size: "200g",
     price:1.50
   },
@@ -430,7 +440,7 @@ export const snacks =[
   {
     id:'46',
     imgURL:eatsummore,
-    name: "Eat-Summor Biscuits",
+    name: "EEt Sum mor Biscuits",
     size: "200g",
     price:1.50
   },
@@ -438,44 +448,44 @@ export const snacks =[
     id:'47',
     imgURL:marie,
     name: "Marie Biscuits",
-    size: "200g",
-    price:2.00
+    size: "150g",
+    price:1.00
   },
 
   {
     id:'48',
     imgURL:simbaMexican,
-    name: "Simba MEXICAN",
-    size: "120g",
-    price:2.90
+    name: "Simba MEXICAN chilli",
+    size: "125g",
+    price:1.99
   },
   {
     id:'49',
     imgURL:simbaSv,
     name: "Simba SALT&VINEGAR",
-    size: "120g",
-    price:2.90
+    size: "125g",
+    price:1.99
   },
   {
     id:'50',
     imgURL:simba,
-    name: "Simba Chips",
-    size: "120g",
-    price:2.90
+    name: "Simba Chips chutney",
+    size: "125g",
+    price:1.99
   },
     {
     id:'51',
     imgURL:tennis,
-    name: "TENNIS BISCUITS",
-    size: "120g",
+    name: "Bakers TENNIS BISCUITS",
+    size: "200g",
     price:2.90
   },
     {
     id:'52',
     imgURL:topper,
     name: "TOPPER BISCUITS",
-    size: "120g",
-    price:2.90
+    size: "125g",
+    price:0.95
   },
 ]
 
@@ -487,49 +497,63 @@ export const cleaning =[
     id:'53',
     imgURL:cobra,
     name:"Cobra Floor Polish",
-    size:"500g",
-    price:2.79
+    size:"350ml",
+    price:2.75
   },
   {
     id:'54',
     imgURL:doom,
     name:"Doom Spray",
-    size:"500g",
-    price:1.20
+    size:"300ml",
+    price:1.95
   },
    {
     id:'55',
     imgURL:handyandy,
     name:"Handy Andy",
-    size:"300ml",
-    price:3.50
+    size:"750ml",
+    price:3.95
   },
    {
     id:'56',
     imgURL:jik,
-    name:"jik",
-    size:"300ml",
-    price:3.50
+    name:"jik lemon",
+    size:"750ml",
+    price:1.95
+  },
+   {
+    id:'71',
+    imgURL:kiwi,
+    name:"kiwi shoe polish",
+    size:"200ml",
+    price:2.00
+  },
+   {
+    id:'72',//last one
+    imgURL:jik,
+    name:"lion matches",
+    size:"pack 10",
+    price:1.50
   },
    {
     id:'57',
     imgURL:mosquitoQ,
-    name:"mosquito coil",
-    size:"300ml",
-    price:3.50
+    name:"doom mosquito coil",
+    size:"125g",
+    price:2.95
   },
    {
     id:'58',
     imgURL:savlon,
-    name:"savlon",
-    size:"300ml",
-    price:3.50
+    name:"savlon antiseptic liquid",
+    size:"500ml",
+    price:4.50
   },
   {
     id:'59',
     imgURL:stasoft2,
     name:"StaSoft Fabric Softner",
-    size:"1L",
+    size:"2L",
     price:3.00
   },
   {
@@ -537,7 +561,7 @@ export const cleaning =[
     imgURL:washingpowder,
     name:"MAQ Wahing Powder",
     size:"2kg",
-    price:5.40
+    price:5.00
   },
 
 ]
@@ -548,42 +572,42 @@ export const skincare =[
     imgURL:clere,
     name: "Clere Lotion",
     size: "400ml",
-    price:4.80
+    price:3.80
   },
   {
     id:'62',
     imgURL:dettol,
-    name: "dettol soup",
-    size: "400ml",
-    price:4.80
+    name: "dettol soap",
+    size: "175g",
+    price:0.95
   },
   {
     id:'63',
     imgURL:foambath,
-    name: "Shower Gel",
-    size: "200ml",
-    price:3.50
+    name: "satiskin foam bath",
+    size: "2L",
+    price:4.50
   },
   {
     id:'64',
     imgURL:ingrams,
     name: "Camphor Body Cream",
-    size: "500ml",
-    price:5.50
+    size: "450ml",
+    price:4.90
   },
   {
     id:'65',
     imgURL:lifebouy,
     name: "Lifebouy Bar Soap",
-    size: "100g",
-    price:1.25
+    size: "170g",
+    price:0.95
   },
   {
     id:'66',
     imgURL:lux,
     name: "Lux Soap",
-    size: "100g",
-    price:1.20
+    size: "170g",
+    price:0.95
   },
   {
     id:'67',
@@ -597,15 +621,15 @@ export const skincare =[
     imgURL:sunlightbar,
     name: "Sunlight Bar Soap",
     size: "200g",
-    price:2.80
+    price:1.00
     
   },
    {
     id:'69',
     imgURL:toothbrush,
-    name: "toothbrush",
-    size: "200g",
-    price:2.80
+    name: "colgate toothbrush",
+    size: "1",
+    price:0.80
     
   },
 ]
