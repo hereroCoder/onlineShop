@@ -19,6 +19,7 @@ export default {
       'blue': 'var(--blue)',
       'white': 'var(--white)',
       'black':'var(--black)',
+      'orange':'var(--orange))',
       'greenish':'var(--greenish)'
       }
   

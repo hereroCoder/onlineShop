@@ -16,7 +16,7 @@ import { CartProvider } from 'react-use-cart'
 //app for nostalgia
 const App = () => {
   return (
-    <main>
+    <main className='bg-greenish'>
       <CartProvider>
         <Header/>
         <Hero/>

@@ -3,6 +3,7 @@ import { faBars, faXmark,faMagnifyingGlass,faUser,faCartShopping,faArrowsToDot} 
 import { useState } from 'react';
 import { useCart } from 'react-use-cart';
 import Cart from './Cart';
+import logo from '../assets/icons/logo.png';
 
 
 
@@ -31,9 +32,7 @@ const Header = () => {
       {/* middle */}
       <div className='flex justify-between px-4 pt-2 items-center'>
         <a href="#hero">
-           <h1 className='font-playfair text-xl font-bold tracking-widest'>W
-          <FontAwesomeIcon icon={faArrowsToDot} />
-          CHIBZ</h1>
+           <img src={logo} alt="logo" className='w-28' />
         </a>
        
 
