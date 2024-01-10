@@ -7,7 +7,6 @@ import Snacks from './sections/Snacks'
 import Drinks from './sections/Drinks'
 import Hero from './components/Hero'
 import Newsletter from './components/Newsletter'
-
 import { CartProvider } from 'react-use-cart'
 
 

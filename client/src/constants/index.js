@@ -329,13 +329,13 @@ export const foods =[
 
 
 export const drinks =[
-  {
-    id:'32',
-    imgURL:amarula,
-    name: "amarula",
-    size: "2L",
-    price:8.50
-  },
+  // {
+  //   id:'32',
+  //   imgURL:amarula,
+  //   name: "amarula",
+  //   size: "2L",
+  //   price:8.50
+  // },
   {
     id:'33',
     imgURL:ceres,
@@ -427,7 +427,7 @@ export const drinks =[
  
   
 ]
-/////////////////////////////////////////////////////////////////
+
 export const snacks =[
    {
     id:'45',
@@ -567,13 +567,13 @@ export const cleaning =[
 ]
 
 export const skincare =[
-  {
-    id:'61',
-    imgURL:clere,
-    name: "Clere Lotion",
-    size: "400ml",
-    price:3.80
-  },
+  // {
+  //   id:'61',
+  //   imgURL:clere,
+  //   name: "Clere Lotion",
+  //   size: "400ml",
+  //   price:3.80
+  // },
   {
     id:'62',
     imgURL:dettol,

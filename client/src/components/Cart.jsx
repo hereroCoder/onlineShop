@@ -30,7 +30,7 @@ const Cart = () => {
       <div className="flex flex-col justify-center items-center pr-2">
         {/* items */}
         <div className="relative overflow-x-auto">
-          <table className="w-full text-left text-gray-700">
+          <table className="w-full text-left color-black">
            {items.map((item,index)=>{
             return(
                <tbody className=" border-gray-200 border">

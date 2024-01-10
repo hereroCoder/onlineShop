@@ -23,9 +23,9 @@ const Header = () => {
 
 
   return (
-    <header className='flex flex-col justify-center pb-4 gap-3 fixed top-0 left-0 right-0 bg-white text-lg'>
+    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white text-lg z-50'>
       {/* top */}
-      <div className='bg-red-600 py-2'>
+      <div className='bg-blue py-2'>
         <p className='text-center font-semibold text-lg text-gray-100 capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p>
       </div> 
 
@@ -50,7 +50,7 @@ const Header = () => {
           </div>
            <div className='flex flex-col justify-center items-center hover:cursor-pointer' onClick={openCart}>
             <div>
-              <p className='bg-red-500 text-white font-bold w-4 h-4 rounded-full absolute flex items-center justify-center p-3 text-sm'>{totalItems}</p>
+              <p className='bg-orange text-stone-950 font-black text-lg w-5 h-5 rounded-full absolute flex items-center justify-center p-3 '>{totalItems}</p>
             </div>
             <FontAwesomeIcon icon={faCartShopping} className='text-gray-600 text-2xl'  />
             <p className='hidden sm:block text-sm'>Cart</p>
@@ -70,8 +70,8 @@ const Header = () => {
 
       </div>
       <nav className={`flex flex-col sm:hidden fixed justify-center gap-6 ${open?'right-0':'right-[-200%]'} top-0 w-3/4 h-full z-5 bg-white items-center`}>
-        <a href="#cleaning" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Household</a>
-        <a href="#skincare" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
+        <a href="#household" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Household</a>
+        <a href="#self-care" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
         <a href="#drinks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
         <a href="#snacks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Snacks</a>
         <a href="#foods" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Dry Foods</a>
@@ -80,8 +80,8 @@ const Header = () => {
 
       {/* bottom */}
       <nav className='hidden sm:flex justify-center w-2/4 items-center gap-6'>
-        <a href="#cleaning" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Household</a>
-        <a href="#skincare" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
+        <a href="#household" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Household</a>
+        <a href="#self-care" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
         <a href="#drinks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
         <a href="#snacks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Snacks</a>
         <a href="#foods" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Dry Foods</a>
