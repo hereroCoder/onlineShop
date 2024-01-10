@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,13 +15,25 @@
   *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing:border-box;
     scroll-behavior: smooth;
-    @apply font-barlow;
+    font-family: roboto;
 
   }
   
   h2{
-    @apply font-playfair text-2xl pb-4
+    @apply text-4xl pb-4
+  } 
+  h3{
+    @apply text-2xl font-bold mb-2
+  }
+  p{
+    @apply text-lg
+  }
+  
+
+  footer a, footer p, footer h3{
+    @apply text-white text-base
+
   }
 }

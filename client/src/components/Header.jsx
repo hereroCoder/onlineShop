@@ -23,7 +23,7 @@ const Header = () => {
 
 
   return (
-    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white text-lg z-50'>
+    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white text-lg z-50 px-1/5'>
       {/* top */}
       <div className='bg-blue py-2'>
         <p className='text-center font-semibold text-lg text-gray-100 capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p>

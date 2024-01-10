@@ -14,8 +14,8 @@ const Hero = () => {
         
         <div className='text-center text-lg leading-10'>
          
-          <h1 className='font-bold text-6xl'>Select a Holiday Combo</h1>
-          <p className='text-4xl font-bold'>Save upto 70% off</p>
+          <h1 className='font-bold text-8xl'>Select a Holiday Combo</h1>
+          <p className='text-5xl font-bold'>Save upto 70% off</p>
           <p>No code neeeded, price as marked</p>
           <button className='bg-red-600 px-8 py-2 rounded-full text-white hover:animate-bounce hover:font-bold'>Shop Now <FontAwesomeIcon icon={faArrowRight} /></button>
            <p className='text-sm'>Taste of Southren Africa in the UK</p>

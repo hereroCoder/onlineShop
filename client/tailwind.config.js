@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -12,8 +13,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'playfair': ['Playfair Display', 'sans-serif'],
-        'barlow':  ['Barlow', 'sans-serif']
+        'roboto': ['Roboto', 'sans-serif'],
       },
       colors:{
       'blue': 'var(--blue)',

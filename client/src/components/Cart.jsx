@@ -19,7 +19,7 @@ const Cart = () => {
     return (
       <div className="m-auto text-center">
           <h1 className="font-semibold">Your Cart is Empty</h1>
-          <button className="bg-green-400 px-6 py-2 hover:scale-105 transition ease-linear ">Shop</button>
+          <a href="#self-care" className="bg-green-400 px-6 py-2 hover:scale-105 transition ease-linear ">Shop</a>
       </div>
  
     ) 
