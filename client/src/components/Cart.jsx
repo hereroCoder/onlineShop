@@ -19,7 +19,7 @@ const Cart = () => {
     return (
       <div className="m-auto text-center">
           <h1 className="font-semibold">Your Cart is Empty</h1>
-          <a href="#self-care" className="bg-blue px-6 py-2 hover:scale-105 transition ease-linear ">Shop</a>
+          {/* <a href="#self-care" className="bg-blue px-6 py-2 hover:scale-105 transition ease-linear ">Shop</a> */}
       </div>
  
     ) 
@@ -34,7 +34,6 @@ const Cart = () => {
            {items.map((item,index)=>{
             return(
                <tbody className=" border-gray-200 border">
-             
                 <tr key={index} >
                   <td>
                     <img src={item.imgURL} alt="" className="h-14" />
@@ -42,6 +41,7 @@ const Cart = () => {
                   <td className="py-8 px-2">{item.name} ({item.size}) </td>
                   <td className="py-8 px-2 flex">
                     <button className="bg-transparent px-2 mr-2 border-blue rounded font-bold text-blue border-2 " onClick={()=>(updateItemQuantity(item.id,item.quantity-1))}>-</button>
+
                     {item.quantity}
 
                     <button className="bg-blue px-2 ml-2 rounded font-bold text-white hover:shadow-2xl shadow-black" onClick={()=>(updateItemQuantity(item.id, item.quantity+1))}>+</button>

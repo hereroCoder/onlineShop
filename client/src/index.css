@@ -21,7 +21,9 @@
     transition: 0.5s;
 
   }
-  
+  h1{
+    @apply font-bold text-4xl
+  }
   h2{
     @apply text-4xl pb-4
   } 

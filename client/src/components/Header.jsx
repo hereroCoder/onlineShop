@@ -25,8 +25,7 @@ const Header = () => {
   return (
     <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white text-lg z-50 px-1/5'>
       {/* top */}
-      <div className='bg-blue py-2 text-white flex justify-end gap-3 p-2'>
-        {/* <p className='text-center font-semibold text-lg text-gray-100 capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p> */}
+      <div className='bg-blue text-white flex justify-end gap-3 p-2'>
         <a href="" className='border-r pr-2 hover:underline'>Sign in</a>
         <a href="" className='border-r pr-2 hover:underline'>Register</a>
         <a href="" className='border-r pr-2 hover:underline'>Careers</a>
@@ -98,13 +97,16 @@ const Header = () => {
         theCart?(
           <div className='flex fixed justify-star w-full gap-4 h-screen z-50 bg-white py-4 right-0 top-0 overflow-scroll'>
              <Cart/>
-              <FontAwesomeIcon icon={faXmark} className='text-3xl w-4 text-gray-600 hover:cursor-pointer' onClick={openCart}/>
+              <FontAwesomeIcon icon={faXmark} className='text-3xl w-4  text-gray-600 hover:cursor-pointer' onClick={openCart}/>
           </div>
          
         ):(
           console.log("")
         )
       }
+
+      <div className='bg-orange text-white flex justify-center p-2'>
+      <p className='text-center font-semibold text-lg text-black capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p> </div>
 
     </header>
   )
