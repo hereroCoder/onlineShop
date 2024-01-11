@@ -16,16 +16,6 @@ This online shop is a nostalgic journey tailored for those living overseas, seek
   
 - live at https://hererocoder.github.io/onlineShop/
 
-- demos
-  
-
-
-https://github.com/hereroCoder/onlineShop/assets/83869107/278a6f52-5e9f-4028-9a58-30fe2ee6ffe6
-
-
-
-https://github.com/hereroCoder/onlineShop/assets/83869107/e59e4f19-ee77-41f4-85ff-4e605dcb7a6a
-
 
 ## Technologies Used
 
