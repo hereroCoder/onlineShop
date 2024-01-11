@@ -100,7 +100,8 @@ export const foods =[
     imgURL:atchar,
     name: "pakco hot Atchar",
     size: "385g",
-    price:7.80
+    price:7.80,
+    category:'foods'
   },
   { 
     id:'2',

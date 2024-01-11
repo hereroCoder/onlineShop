@@ -2,13 +2,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faInstagram,faFacebook,faTwitter,faWhatsapp,faTiktok} from "@fortawesome/free-brands-svg-icons";
 import {faCopyright} from "@fortawesome/free-solid-svg-icons";
 import logo from '../assets/icons/logowhite.png'
+import botswana from '../assets/images/botswana.png'
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col justify-between px-1/5 items-center bg-blue gap-4 py-4 text-xs'>
+    <footer className='flex flex-col justify-between items-center bg-blue gap-4 py-4 text-xs'>
       {/* more info for desktop */}
-      <img src={logo} alt="logo" className='w-20'/>
+      {/*  */}
       <div className=' hidden items-center sm:flex mb-4 text-md sm:justify-around w-full'>
+        <div className='flex flex-col leading-6 gap-3'>
+          <img src={logo} alt="logo" className='w-20'/>
+          <img src={botswana} alt="" className='w-20'/>
+
+        </div>
         <div className='flex flex-col leading-6'>
           <h3>About Chibz</h3>
           <a href="" className='hover:underline '>History</a>

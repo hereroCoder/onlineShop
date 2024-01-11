@@ -1,5 +1,7 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Collection from './components/Collection'
+import About from './components/About'
 import Household from './sections/Household'
 import SkinCare from './sections/SkinCare'
 import DryFoods from './sections/DryFoods'
@@ -19,11 +21,13 @@ const App = () => {
       <CartProvider>
         <Header/>
         <Hero/>
-        <SkinCare/>
+        <Collection/>
+        <About/>
+        {/* <SkinCare/>
         <Snacks/>
         <Drinks/>
         <DryFoods/>
-        <Household/>
+        <Household/> */}
         <Newsletter/>
         <Footer/>
 

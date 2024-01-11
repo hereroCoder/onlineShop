@@ -23,14 +23,14 @@ const Header = () => {
 
 
   return (
-    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white text-lg z-50 px-1/5'>
+    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white text-lg z-50'>
       {/* top */}
       <div className='bg-blue text-white flex justify-end gap-3 p-2'>
         <a href="" className='border-r pr-2 hover:underline'>Sign in</a>
         <a href="" className='border-r pr-2 hover:underline'>Register</a>
-        <a href="" className='border-r pr-2 hover:underline'>Careers</a>
-        <a href="" className='border-r pr-2 hover:underline'>Countact us</a>
-        <a href="" className='border-r pr-2 hover:underline'>Help</a>
+        <a href="" className='border-r pr-2 hidden md:flex hover:underline'>Careers</a>
+        <a href="" className='border-r pr-2 hidden md:flex hover:underline'>Countact us</a>
+        <a href="" className='border-r pr-2 hidden md:flex hover:underline'>Help</a>
       </div> 
 
       {/* middle */}

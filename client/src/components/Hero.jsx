@@ -15,16 +15,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { Pagination } from 'swiper/modules';
+
 
 
 const Hero = () => {
   return (
     <section id='hero' className='bg-white'> 
     <Swiper
-      // spaceBetween={50}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
+      pagination={true} modules={[Pagination]}
     >
       
 

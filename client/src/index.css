@@ -21,11 +21,12 @@
     transition: 0.5s;
 
   }
+ 
   h1{
     @apply font-bold text-4xl
   }
   h2{
-    @apply text-4xl pb-4
+    @apply text-3xl pb-2
   } 
   h3{
     @apply text-2xl font-bold mb-2
@@ -42,4 +43,5 @@
   .newsletter p{
     @apply text-base leading-7 mb-3
   }
+
 }
