@@ -36,4 +36,7 @@
     @apply text-white text-base
 
   }
+  .newsletter p{
+    @apply text-base leading-7 mb-3
+  }
 }

@@ -25,8 +25,13 @@ const Header = () => {
   return (
     <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white text-lg z-50 px-1/5'>
       {/* top */}
-      <div className='bg-blue py-2'>
-        <p className='text-center font-semibold text-lg text-gray-100 capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p>
+      <div className='bg-blue py-2 text-white flex justify-end gap-3 p-2'>
+        {/* <p className='text-center font-semibold text-lg text-gray-100 capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p> */}
+        <a href="" className='border-r pr-2 hover:underline'>Sign in</a>
+        <a href="" className='border-r pr-2 hover:underline'>Register</a>
+        <a href="" className='border-r pr-2 hover:underline'>Careers</a>
+        <a href="" className='border-r pr-2 hover:underline'>Countact us</a>
+        <a href="" className='border-r pr-2 hover:underline'>Help</a>
       </div> 
 
       {/* middle */}
@@ -37,9 +42,9 @@ const Header = () => {
        
 
         {/* search */}
-        <div className='hidden sm:flex justify-between px-8 py-2 border-2 border-gray-200 bg-gray-100 items-center w-3/5 rounded-full'>
-          <input type="text" placeholder='Search' className='outline-none bg-transparent w-2/3'/>
-         <FontAwesomeIcon icon={faMagnifyingGlass} className='text-gray-300 hover:cursor-pointer' />
+        <div className='hidden sm:flex justify-between pl-2 border-2 bg-slate-100 items-center w-2/6 rounded-full'>
+          <input type="text" placeholder='What are you looking for?' className='outline-none bg-transparent'/>
+         <FontAwesomeIcon icon={faMagnifyingGlass} className='hover:cursor-pointer bg-blue text-white p-3 rounded-full ' />
         </div>
 
         {/* account and cart */}
