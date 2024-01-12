@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white z-50'>
       {/* top */}
-      <div className='bg-blue text-white flex justify-end gap-3 p-2 px-24'>
+      <div className='bg-blue text-white flex justify-end gap-3 p-2 px-10 md:px-24'>
         <a href="" className='border-r pr-2 hover:underline'>Sign in</a>
         <a href="" className='border-r pr-2 hover:underline'>Register</a>
         <a href="" className='border-r pr-2 hidden md:flex hover:underline'>Careers</a>
@@ -34,7 +34,7 @@ const Header = () => {
       </div> 
 
       {/* middle */}
-      <div className='flex justify-between pt-2 items-center px-24'>
+      <div className='flex justify-between pt-2 items-center px-10 md:px-24'>
         <a href="#hero">
            <img src={logo} alt="logo" className='w-28' />
         </a>
