@@ -3,6 +3,7 @@ import {faInstagram,faFacebook,faTwitter,faWhatsapp,faTiktok} from "@fortawesome
 import {faCopyright} from "@fortawesome/free-solid-svg-icons";
 import logo from '../assets/icons/logowhite.png'
 import botswana from '../assets/images/botswana.png'
+import FooterAccordion from './FooterAccordion';
 
 const Footer = () => {
   return (
@@ -36,6 +37,10 @@ const Footer = () => {
           <a href="" className='hover:underline '>Accessibility</a>
         </div>
       
+      </div>
+      
+      <div className='sm:hidden'>
+          <FooterAccordion/>
       </div>
 
       {/* socials */}

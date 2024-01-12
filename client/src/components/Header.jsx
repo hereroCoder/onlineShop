@@ -106,7 +106,9 @@ const Header = () => {
       }
 
       <div className='bg-orange text-white flex justify-center p-2'>
-      <p className='text-center font-semibold text-lg text-black capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p> </div>
+      <p className='hidden md:flex text-center font-semibold text-lg text-black capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p> 
+      <p className='md:hidden text-center font-semibold text-base text-black capitalize tracking-widest'>Free Shipping for orders £50+ </p> 
+      </div>
 
     </header>
   )

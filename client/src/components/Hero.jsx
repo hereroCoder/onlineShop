@@ -32,18 +32,19 @@ const Hero = () => {
       <SwiperSlide>
         <div className='relative w-full h-96'>
 
-          <img src={groceries} alt="" className='object-scale-down'/>
-           <div className='absolute top-1/4 z-5 bg-white p-4 rounded border-2 border-blue'>
-            <h1>Your Favorite Botswana Shops </h1>
-            <p>Brought to your door steps</p>
-            <div className='grid grid-cols-4 gap-2 '>
-              <img src={pep} alt=""      className='w-24 h-24 object-fill'  />
-              <img src={choppies} alt="" className='w-24  h-24 object-fill' />
-              <img src={sefalana} alt="" className='w-24  h-24 object-fill' />
-              <img src={spar} alt=""     className='w-24  h-24 object-fill' />
+          <img src={groceries} alt="" className='w-full h-full object-cover'/>
+           <div className='absolute bottom-0 w-3/4 md:w-2/5 z-5 bg-white p-4 rounded'>
+            <h1 className='hidden md:flex'>Your Favorite Botswana Shops </h1>
+            <h1 className='md:hidden'>All Your Favorites</h1>
+            <div className='md:flex hidden justify-evenly my-2 '>
+              <img src={pep} alt=""      className='w-20 h-20 object-fill'  />
+              <img src={choppies} alt="" className='w-20 h-20 object-fill' />
+              <img src={sefalana} alt="" className='w-20 h-20 object-fill' />
+              <img src={spar} alt=""     className='w-20 h-20 object-fill' />
             </div>
+             <p className='text-sm'>Taste of Botswana in the UK</p>
             <button className='bg-blue px-8 py-2 rounded-full text-white hover:animate-bounce hover:font-bold m-2'>Shop Now <FontAwesomeIcon icon={faArrowRight} /></button>
-            <p className='text-sm'>Taste of Botswana in the UK</p>
+           
           </div>
 
         </div>
@@ -51,12 +52,12 @@ const Hero = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className='relative w-full h-96'>
-          <img src={combo} alt="" className='w-3/4 h-full object-contain'/>
-          <div className='absolute top-1/4 z-5 bg-white p-4 rounded right-20 border-2 border-blue'>
+          <img src={combo} alt="" className='w-full h-full object-cover md:object-scale-down '/>
+          <div className='absolute bottom-0 z-5 bg-white p-4 rounded'>
             <h1 className='my-2'>Select A Combo</h1>
             <p className='mb-2'>No code neeeded, price as marked</p>
             <button className='bg-blue px-8 py-2 rounded-full text-white hover:animate-bounce hover:font-bold mb-2'>Shop Now <FontAwesomeIcon icon={faArrowRight} /></button>
-            <p className='text-sm'>Taste of Botswana in the UK</p>
+            {/* <p className='text-sm'>Taste of Botswana in the UK</p> */}
           </div>
 
         </div>
