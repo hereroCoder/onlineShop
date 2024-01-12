@@ -23,9 +23,9 @@ const Header = () => {
 
 
   return (
-    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white text-lg z-50'>
+    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white z-50'>
       {/* top */}
-      <div className='bg-blue text-white flex justify-end gap-3 p-2'>
+      <div className='bg-blue text-white flex justify-end gap-3 p-2 px-24'>
         <a href="" className='border-r pr-2 hover:underline'>Sign in</a>
         <a href="" className='border-r pr-2 hover:underline'>Register</a>
         <a href="" className='border-r pr-2 hidden md:flex hover:underline'>Careers</a>
@@ -34,24 +34,31 @@ const Header = () => {
       </div> 
 
       {/* middle */}
-      <div className='flex justify-between px-4 pt-2 items-center'>
+      <div className='flex justify-between pt-2 items-center px-24'>
         <a href="#hero">
            <img src={logo} alt="logo" className='w-28' />
         </a>
        
 
         {/* search */}
-        <div className='hidden sm:flex justify-between pl-2 border-2 bg-slate-100 items-center w-2/6 rounded-full'>
+        <div className='hidden sm:flex justify-between border-2 bg-slate-100 items-center w-2/6 rounded-full'>
+          <select name="" id="" className='bg-white p-3 rounded-bl-full rounded-tl-full outline-none '>
+            <option value="" >All</option>
+            <option value="" >Groceries</option>
+            <option value="" >Household</option>
+            <option value="" >Drinks</option>
+            <option value="" >Cosmetics</option>
+          </select>
           <input type="text" placeholder='What are you looking for?' className='outline-none bg-transparent'/>
          <FontAwesomeIcon icon={faMagnifyingGlass} className='hover:cursor-pointer bg-blue text-white p-3 rounded-full ' />
         </div>
 
         {/* account and cart */}
         <div className='flex gap-5'>
-          <div className='flex flex-col justify-center items-center hover:cursor-pointer'>
+          {/* <div className='flex flex-col justify-center items-center hover:cursor-pointer'>
             <FontAwesomeIcon icon={faUser} className='text-gray-600 text-2xl' />
             <p className='hidden sm:block text-sm'>Account</p>
-          </div>
+          </div> */}
            <div className='flex flex-col justify-center items-center hover:cursor-pointer' onClick={openCart}>
             <div>
               <p className='bg-orange text-stone-950 font-black text-lg w-5 h-5 rounded-full absolute flex items-center justify-center p-3 '>{totalItems}</p>
@@ -83,14 +90,14 @@ const Header = () => {
       
 
       {/* bottom */}
-      <nav className='hidden sm:flex justify-center w-2/4 items-center gap-6'>
+      {/* <nav className='hidden sm:flex justify-center w-2/4 items-center gap-6'>
         <a href="#household" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Household</a>
         <a href="#self-care" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
         <a href="#drinks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
         <a href="#snacks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Snacks</a>
         <a href="#foods" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Dry Foods</a>
       </nav>
-      
+       */}
 
       {/* cart content */}
       {
@@ -106,7 +113,7 @@ const Header = () => {
       }
 
       <div className='bg-orange text-white flex justify-center p-2'>
-      <p className='hidden md:flex text-center font-semibold text-lg text-black capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p> 
+      <p className='hidden md:flex text-center font-semibold text-black capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p> 
       <p className='md:hidden text-center font-semibold text-base text-black capitalize tracking-widest'>Free Shipping for orders £50+ </p> 
       </div>
 
