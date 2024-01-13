@@ -12,12 +12,14 @@ const Header = ({changeItems}) => {
 
    const [searchedItems,setSearchedItems] = useState('')
 
-  //  const handleClick = () =>{
-  //   changeCategory(selectedCategory)
-  //  }
 
     const handleClick = () =>{
-    changeItems(searchedItems)
+          changeItems(searchedItems)
+      
+      // else{
+      //    changeCategory(selectedCategory)
+      // }
+    
    }
 
   const [open,setOpen] = useState(false);
@@ -38,11 +40,11 @@ const Header = ({changeItems}) => {
     <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white z-50'>
       {/* top */}
       <div className='bg-blue text-white flex justify-end gap-3 p-2 px-10 md:px-24'>
-        <a href="" className='border-r pr-2 hover:underline'>Sign in</a>
-        <a href="" className='border-r pr-2 hover:underline'>Register</a>
-        <a href="" className='border-r pr-2 hidden md:flex hover:underline'>Careers</a>
-        <a href="" className='border-r pr-2 hidden md:flex hover:underline'>Countact us</a>
-        <a href="" className='border-r pr-2 hidden md:flex hover:underline'>Help</a>
+        <a href="/" className='border-r pr-2 hover:underline'>Sign in</a>
+        <a href="/" className='border-r pr-2 hover:underline'>Register</a>
+        <a href="/" className='border-r pr-2 hidden md:flex hover:underline'>Careers</a>
+        <a href="/" className='border-r pr-2 hidden md:flex hover:underline'>Countact us</a>
+        <a href="/" className='border-r pr-2 hidden md:flex hover:underline'>Help</a>
       </div> 
 
       {/* middle */}
@@ -138,8 +140,14 @@ const Header = ({changeItems}) => {
             <option value="Drinks" >Drinks</option>
             <option value="Cosmetics" >Cosmetics</option>
           </select>
-          <input type="text" placeholder='Search for products...' className='outline-none bg-transparent'/>
-         <FontAwesomeIcon icon={faMagnifyingGlass} className='hover:cursor-pointer bg-blue text-white p-3 rounded-full ' />
+          <input 
+            type="text" 
+            placeholder='Search for products...' 
+            className='outline-none bg-transparent'
+            onChange={(e)=>setSearchedItems(e.target.value)}
+          />
+         <FontAwesomeIcon icon={faMagnifyingGlass} className='hover:cursor-pointer bg-blue text-white p-3 rounded-full ' onClick={handleClick} />
+        
       </div>
 
       <div className='bg-orange text-white flex justify-center p-2'>

@@ -102,7 +102,7 @@ export const data =[
     name: "pakco hot Atchar",
     size: "385g",
     price:7.80,
-    category:'grocery'
+    category:'grocery',
   },
   { 
     id:'2',
@@ -294,7 +294,7 @@ export const data =[
     {
     id:'24',
     imgURL:ricoffy,
-    name: "nescafe ricoffy",
+    name: "nescafe ricoffy Coffee",
     size: "250g",
     price:3.50,
     category:'grocery'

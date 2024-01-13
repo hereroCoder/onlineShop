@@ -2,6 +2,7 @@ import { useCart } from "react-use-cart"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
+
 const Cart = () => {
   const {items,
     isEmpty,
@@ -19,9 +20,7 @@ const Cart = () => {
     return (
       <div className="m-auto text-center">
           <h1 className="font-semibold">Your Cart is Empty</h1>
-          {/* <a href="#self-care" className="bg-blue px-6 py-2 hover:scale-105 transition ease-linear ">Shop</a> */}
       </div>
- 
     ) 
   } 
 

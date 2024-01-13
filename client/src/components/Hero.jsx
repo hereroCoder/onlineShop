@@ -9,6 +9,7 @@ import spar from '../assets/images/spar-Tops.webp'
 import sefalana from '../assets/images/sefalana.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -42,8 +43,9 @@ const Hero = () => {
               <img src={sefalana} alt="" className='w-20 h-20 object-fill' />
               <img src={spar} alt=""     className='w-20 h-20 object-fill' />
             </div>
-             <p className='text-sm'>Taste of Botswana in the UK</p>
-            <button className='bg-blue px-8 py-2 rounded-full text-white hover:animate-bounce hover:font-bold m-2'>Shop Now <FontAwesomeIcon icon={faArrowRight} /></button>
+             <p className='text-sm mb-2'>Taste of Botswana in the UK</p>
+
+              <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer">Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link>
            
           </div>
 
@@ -56,8 +58,9 @@ const Hero = () => {
           <div className='absolute bottom-0 z-5 bg-white p-4 rounded'>
             <h1 className='my-2'>Select A Combo</h1>
             <p className='mb-2'>No code neeeded, price as marked</p>
-            <button className='bg-blue px-8 py-2 rounded-full text-white hover:animate-bounce hover:font-bold mb-2'>Shop Now <FontAwesomeIcon icon={faArrowRight} /></button>
-            {/* <p className='text-sm'>Taste of Botswana in the UK</p> */}
+            
+              <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer">Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link>
+            
           </div>
 
         </div>
