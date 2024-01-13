@@ -7,11 +7,17 @@ import logo from '../assets/icons/logo.png';
 
 
 
-const Header = ({changeCategory}) => {
-   const [selectedCategory,setSelectedCategory] = useState('')
+const Header = ({changeItems}) => {
+   const [selectedCategory,setSelectedCategory] = useState('');
 
-   const handleClick = () =>{
-    changeCategory(selectedCategory)
+   const [searchedItems,setSearchedItems] = useState('')
+
+  //  const handleClick = () =>{
+  //   changeCategory(selectedCategory)
+  //  }
+
+    const handleClick = () =>{
+    changeItems(searchedItems)
    }
 
   const [open,setOpen] = useState(false);
@@ -60,6 +66,7 @@ const Header = ({changeCategory}) => {
             type="text" 
             placeholder='Search for products...' 
             className='outline-none bg-transparent'
+            onChange={(e)=>setSearchedItems(e.target.value)}
           />
          <FontAwesomeIcon icon={faMagnifyingGlass} className='hover:cursor-pointer bg-blue text-white p-3 rounded-full ' onClick={handleClick} />
         </div>

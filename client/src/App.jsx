@@ -11,11 +11,18 @@ import {data} from './constants/index'
 import ProductSection from './components/ProductsSection'
 
 const App = () => {
-  const [category,setCategory] = useState('');
 
+  const [category,setCategory] = useState('');
+  const [items, setItems] = useState('');
+
+ const changeItems = searchedItems =>{
+    setItems(searchedItems);
+  }
   const changeCategory = selectedCategory =>{
     setCategory(selectedCategory)
   }
+
+  const filteredItems = data.filter(product=>product.name.toLowerCase().includes(items.toLowerCase()))
 
   const filteredProducts = data.filter((product)=>
     product.category.toLowerCase().includes(category.toLowerCase())
@@ -24,10 +31,10 @@ const App = () => {
   return (
     <main className='bg-greenish'>
       <CartProvider>
-        <Header changeCategory={changeCategory}/>
+        <Header changeItems={changeItems}/>
         <Hero/>
         <Collection/>
-        <ProductSection products={filteredProducts} productsTitle={category}/>
+        <ProductSection products={filteredItems} productsTitle={items}/>
         <About/>
         <Newsletter/>
         <Footer/>
