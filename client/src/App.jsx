@@ -2,35 +2,35 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Collection from './components/Collection'
 import About from './components/About'
-import Household from './sections/Household'
-import SkinCare from './sections/SkinCare'
-import DryFoods from './sections/DryFoods'
-import Snacks from './sections/Snacks'
-import Drinks from './sections/Drinks'
 import Hero from './components/Hero'
 import Newsletter from './components/Newsletter'
 import { CartProvider } from 'react-use-cart'
+import { useState } from 'react'
+import ProductCard from './components/ProductCard'
+import {data} from './constants/index'
+import ProductSection from './components/ProductsSection'
 
-
-
-
-//app for nostalgia
 const App = () => {
+  const [category,setCategory] = useState('');
+
+  const changeCategory = selectedCategory =>{
+    setCategory(selectedCategory)
+  }
+
+  const filteredProducts = data.filter((product)=>
+    product.category.toLowerCase().includes(category.toLowerCase())
+  );
+
   return (
     <main className='bg-greenish'>
       <CartProvider>
-        <Header/>
+        <Header changeCategory={changeCategory}/>
         <Hero/>
         <Collection/>
+        <ProductSection products={filteredProducts} productsTitle={category}/>
         <About/>
-        {/* <SkinCare/>
-        <Snacks/>
-        <Drinks/>
-        <DryFoods/>
-        <Household/> */}
         <Newsletter/>
         <Footer/>
-
       </CartProvider>
       
     </main>

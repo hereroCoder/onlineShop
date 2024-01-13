@@ -1,10 +1,10 @@
 
 import ProductSection from '../components/ProductsSection';
- import {cleaning} from '../constants/index'
+ import {data} from '../constants/index'
 
 const Household = () => {
   return (
-     <ProductSection products={cleaning} productsTitle='household'/>
+     <ProductSection products={data} productsTitle='household'/>
   )
 }
 

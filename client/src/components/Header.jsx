@@ -7,7 +7,13 @@ import logo from '../assets/icons/logo.png';
 
 
 
-const Header = () => {
+const Header = ({changeCategory}) => {
+   const [selectedCategory,setSelectedCategory] = useState('')
+
+   const handleClick = () =>{
+    changeCategory(selectedCategory)
+   }
+
   const [open,setOpen] = useState(false);
   const [theCart,settheCart] = useState(false);
 
@@ -41,18 +47,23 @@ const Header = () => {
        
 
         {/* search */}
-        <div className='hidden sm:flex justify-between border-2 bg-slate-100 items-center w-2/6 rounded-full'>
-          <select name="" id="" className='bg-white p-3 rounded-bl-full rounded-tl-full outline-none '>
+        <div className='hidden sm:flex justify-between border-2 bg-slate-100 items-center w-3/6 rounded-full'>
+          <select name="" id="" className='bg-white p-3 rounded-bl-full rounded-tl-full outline-none ' onChange={(e)=>setSelectedCategory(e.target.value)}>
             <option value="" >All</option>
-            <option value="" >Groceries</option>
-            <option value="" >Household</option>
-            <option value="" >Drinks</option>
-            <option value="" >Cosmetics</option>
+            <option value="Grocery" >Grocery</option>
+            <option value="Snacks" >Snacks</option>
+            <option value="Household" >Household</option>
+            <option value="Drinks" >Drinks</option>
+            <option value="Cosmetics" >Cosmetics</option>
           </select>
-          <input type="text" placeholder='What are you looking for?' className='outline-none bg-transparent'/>
-         <FontAwesomeIcon icon={faMagnifyingGlass} className='hover:cursor-pointer bg-blue text-white p-3 rounded-full ' />
+          <input 
+            type="text" 
+            placeholder='Search for products...' 
+            className='outline-none bg-transparent'
+          />
+         <FontAwesomeIcon icon={faMagnifyingGlass} className='hover:cursor-pointer bg-blue text-white p-3 rounded-full ' onClick={handleClick} />
         </div>
-
+       
         {/* account and cart */}
         <div className='flex gap-5'>
           {/* <div className='flex flex-col justify-center items-center hover:cursor-pointer'>
@@ -111,6 +122,18 @@ const Header = () => {
           console.log("")
         )
       }
+      <div className='flex sm:hidden justify-between border-2 bg-slate-100 items-center rounded-full mx-10 '>
+         <select name="" id="" className='bg-white p-3 rounded-bl-full rounded-tl-full outline-none ' onChange={(e)=>setSelectedCategory(e.target.value)}>
+            <option value="" >All</option>
+            <option value="Grocery" >Grocery</option>
+            <option value="Snacks" >Snacks</option>
+            <option value="Household" >Household</option>
+            <option value="Drinks" >Drinks</option>
+            <option value="Cosmetics" >Cosmetics</option>
+          </select>
+          <input type="text" placeholder='Search for products...' className='outline-none bg-transparent'/>
+         <FontAwesomeIcon icon={faMagnifyingGlass} className='hover:cursor-pointer bg-blue text-white p-3 rounded-full ' />
+      </div>
 
       <div className='bg-orange text-white flex justify-center p-2'>
       <p className='hidden md:flex text-center font-semibold text-black capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p> 

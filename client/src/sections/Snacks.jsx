@@ -1,9 +1,9 @@
 import ProductSection from '../components/ProductsSection';
-import { snacks } from '../constants'
+import {data} from '../constants'
 
 const Snacks = () => {
   return (
-   <ProductSection products={snacks} productsTitle='snacks'/>
+   <ProductSection products={data} productsTitle='snacks'/>
   )
 }
 

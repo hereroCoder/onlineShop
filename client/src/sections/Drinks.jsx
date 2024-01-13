@@ -1,9 +1,9 @@
-import {drinks} from '../constants/index';
+import {data} from '../constants/index';
 import ProductSection from '../components/ProductsSection';
 
 const Drinks = () => {
   return (
-    <ProductSection products={drinks} productsTitle='drinks'/>
+    <ProductSection products={data} productsTitle='drinks'/>
   )
 }
 
