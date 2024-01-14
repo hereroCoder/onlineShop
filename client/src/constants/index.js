@@ -4,6 +4,7 @@ import ceres from '../assets/images/drinks/ceres.png'
 import chill from '../assets/images/drinks/chill.png'
 import fanta from '../assets/images/drinks/fantaorange.jpeg'
 import fruitree from '../assets/images/drinks/fruitree.png'
+import huntersdry from '../assets/images/drinks/huntersdry.jpg'
 import huntersgold from '../assets/images/drinks/huntersgold.jpeg'
 import ironbrew from '../assets/images/drinks/ironbrew.jpeg'
 import lion from '../assets/images/drinks/lion.jpeg'
@@ -218,6 +219,14 @@ export const data =[
     price:3.95,
     category:'grocery'
   },
+   {
+    id:'73', 
+    imgURL:jikelele,
+    name: "Jikelele Spice",
+    size: "350g",
+    price:4,
+    category:'grocery'
+  },
 
   {
     id:'15',
@@ -359,13 +368,14 @@ export const data =[
 
  //drinks
   
-  // {
-  //   id:'32',
-  //   imgURL:amarula,
-  //   name: "amarula",
-  //   size: "2L",
-  //   price:8.50
-  // },
+  {
+    id:'32',
+    imgURL:amarula,
+    name: "amarula ",
+    size: "2L",
+    price:8.50,
+     category:'drinks'
+  },
   {
     id:'33',
     imgURL:ceres,
@@ -402,9 +412,17 @@ export const data =[
   {
     id:'37',
     imgURL:huntersgold,
-    name: "Hunters Gold Cider",
+    name: "Hunters cold Cider",
     size: "330ml",
     price:3.00,
+    category:'drinks'
+  },
+  {
+    id:'74',
+    imgURL:huntersdry,
+    name: "Hunters dry Cider",
+    size: "6x330ml",
+    price:14.00,
     category:'drinks'
   },
 
@@ -470,7 +488,7 @@ export const data =[
 {
     id:'45',
     imgURL:choicea,
-    name: "baker choice assorted",
+    name: "baker choice assorted biscuits",
     size: "200g",
     price:1.50,
     category:'snacks'
@@ -496,7 +514,7 @@ export const data =[
   {
     id:'48',
     imgURL:simbaMexican,
-    name: "Simba Mexican chilli",
+    name: "Simba Mexican chilli chips",
     size: "125g",
     price:1.99,
     category:'snacks'
@@ -504,7 +522,7 @@ export const data =[
   {
     id:'49',
     imgURL:simbaSv,
-    name: "Simba Salt & Vinegar",
+    name: "Simba Salt & Vinegar chips",
     size: "125g",
     price:1.99,
     category:'snacks'
@@ -512,7 +530,7 @@ export const data =[
   {
     id:'50',
     imgURL:simba,
-    name: "Simba Chips chutney",
+    name: "Simba Chips chutney chips",
     size: "125g",
     price:1.99,
     category:'snacks'
@@ -575,8 +593,8 @@ export const data =[
     category:'household'
   },
    {
-    id:'72',//last one
-    imgURL:jik,
+    id:'72',
+    imgURL:matches,
     name:"lion matches",
     size:"pack 10",
     price:1.50,

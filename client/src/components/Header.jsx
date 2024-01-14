@@ -7,22 +7,23 @@ import logo from '../assets/icons/logo.png';
 
 
 
-const Header = ({changeItems}) => {
-   const [selectedCategory,setSelectedCategory] = useState('');
+const Header = ({changeItems,changeCategory}) => {
 
-   const [searchedItems,setSearchedItems] = useState('')
+  const [selectedCategory,setSelectedCategory] = useState('');
 
+  const [searchedItems,setSearchedItems] = useState('')
 
-    const handleClick = () =>{
-          changeItems(searchedItems)
-      
-      // else{
-      //    changeCategory(selectedCategory)
-      // }
-    
+  changeCategory(selectedCategory)
+
+//seach items from input
+  const handleClick = () =>{
+      changeItems(searchedItems)
    }
 
+//open cart or close
   const [open,setOpen] = useState(false);
+
+//
   const [theCart,settheCart] = useState(false);
 
 
@@ -31,6 +32,7 @@ const Header = ({changeItems}) => {
   const showNav = ()=>{
     setOpen(!open)
   };
+  
   const openCart=()=>{
     settheCart(!theCart)
   }
@@ -49,7 +51,7 @@ const Header = ({changeItems}) => {
 
       {/* middle */}
       <div className='flex justify-between pt-2 items-center px-10 md:px-24'>
-        <a href="#hero">
+        <a href="/">
            <img src={logo} alt="logo" className='w-28' />
         </a>
        
@@ -123,8 +125,8 @@ const Header = ({changeItems}) => {
       {
         theCart?(
           <div className='flex fixed justify-star w-full gap-4 h-screen z-50 bg-white py-4 right-0 top-0 overflow-scroll'>
-             <Cart/>
-              <FontAwesomeIcon icon={faXmark} className='text-3xl w-4  text-gray-600 hover:cursor-pointer' onClick={openCart}/>
+             <Cart showNav={showNav}/>
+            <FontAwesomeIcon icon={faXmark} className='text-3xl w-4  text-gray-600 hover:cursor-pointer' onClick={openCart}/>
           </div>
          
         ):(

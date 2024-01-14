@@ -1,9 +1,18 @@
 import { useCart } from "react-use-cart"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
+
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 
-const Cart = () => {
+
+const Cart = ({openCart}) => {
+
+  const handleClick=()=>{
+    openCart(false)
+  }
+
   const {items,
     isEmpty,
     totalUniqueItems,
@@ -19,13 +28,14 @@ const Cart = () => {
 
     return (
       <div className="m-auto text-center">
-          <h1 className="font-semibold">Your Cart is Empty</h1>
+          <h1 className="font-semibold mb-2">Your Cart is Empty</h1>
+          <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer" onClick={handleClick}>Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link>
       </div>
     ) 
   } 
 
   return (
-    <section className="py-4 container font-lg w-2/4 m-auto">
+    <section className="py-4 container font-lg w-5/6 sm:w-2/4 m-auto h-screen z-10">
       <div className="flex flex-col justify-center items-center pr-2">
         {/* items */}
         <div className="relative overflow-x-auto w-full">
@@ -47,13 +57,6 @@ const Cart = () => {
                   </td>
                   <td className="py-8 px-2 "> £{item.price.toFixed(2)}</td>
 
-                  {/* delete button per item */}
-                  {/* <td>
-                    <button onClick={()=>(removeItem(item.id))}>
-                      <FontAwesomeIcon icon={faTrashCan} className="mr-2 hover:text-red-500 hover:cursor-pointer"/>
-                    </button>
-                    
-                    </td> */}
                 </tr>
 
               </tbody>
@@ -85,6 +88,7 @@ const Cart = () => {
          
 
         </div>
+        <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer" onClick={handleClick}>Back to Shopping <FontAwesomeIcon icon={faArrowRight} /></Link>
       </div>
     </section>
   )
