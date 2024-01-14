@@ -42,16 +42,16 @@ const Header = ({changeItems,changeCategory}) => {
     <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white z-50 w-full'>
       {/* top */}
       <div className='bg-blue text-white flex justify-end gap-3 p-2 px-10 md:px-24'>
-        <a href="/" className='border-r pr-2 hover:underline'>Sign in</a>
-        <a href="/" className='border-r pr-2 hover:underline'>Register</a>
-        <a href="/" className='border-r pr-2 hidden md:flex hover:underline'>Careers</a>
-        <a href="/" className='border-r pr-2 hidden md:flex hover:underline'>Countact us</a>
-        <a href="/" className='border-r pr-2 hidden md:flex hover:underline'>Help</a>
+        <a href="/onlineShop/" className='border-r pr-2 hover:underline'>Sign in</a>
+        <a href="/onlineShop/" className='border-r pr-2 hover:underline'>Register</a>
+        <a href="/onlineShop/" className='border-r pr-2 hidden md:flex hover:underline'>Careers</a>
+        <a href="/onlineShop/" className='border-r pr-2 hidden md:flex hover:underline'>Countact us</a>
+        <a href="/onlineShop/" className='border-r pr-2 hidden md:flex hover:underline'>Help</a>
       </div> 
 
       {/* middle */}
       <div className='flex justify-between pt-2 items-center px-10 md:px-24'>
-        <a href="/">
+        <a href="/onlineShop/">
            <img src={logo} alt="logo" className='w-20 md:w-28' />
         </a>
        
