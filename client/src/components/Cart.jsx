@@ -15,7 +15,7 @@ const Cart = ({openCart}) => {
 
   const handleClick=()=>{
     openCart(false);
-    navigate('/onlineShop/Shop') 
+    navigate('/onlineShop/Shop/index.html') 
   }
 
   const {items,
