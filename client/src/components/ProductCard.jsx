@@ -1,11 +1,12 @@
 import {useCart} from 'react-use-cart'
 
 const ProductCard = (props) => {
-  const {addItem} = useCart();
+  const {addItem,items} = useCart();
  
 
   const handleClick = ()=>{
     addItem(props)
+    console.log(items)
   }
 
   return (

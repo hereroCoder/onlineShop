@@ -43,7 +43,7 @@ const Cart = ({openCart}) => {
            {items.map((item,index)=>{
             return(
                <tbody className=" border-gray-200 border">
-                <tr key={index} >
+                <tr key={index}>
                   <td>
                     <img src={item.imgURL} alt="" className="h-14" />
                     <p className="capitalize mb-4">{item.name} ({item.size})</p>
@@ -74,6 +74,7 @@ const Cart = ({openCart}) => {
            })} 
 
           </table>
+       
 
         </div>
         <div className=" flex w-full justify-between px-4">

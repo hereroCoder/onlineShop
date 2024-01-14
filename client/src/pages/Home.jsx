@@ -9,11 +9,14 @@ import { CartProvider } from 'react-use-cart'
 import { useState } from 'react'
 import ProductCard from '../components/ProductCard'
 import {data} from '../constants/index'
+ import { useNavigate } from "react-router-dom";
 import ProductSection from '../components/ProductsSection'
 
 
 const Home = () => {
-
+ 
+  const navigate = useNavigate()
+  
   const [category,setCategory] = useState('');
   const [items, setItems] = useState('');
 
@@ -37,6 +40,7 @@ const Home = () => {
 
   return (
     <main className='bg-greenish'>
+      try {
       <CartProvider>
         <Header changeItems={changeItems} changeCategory={changeCategory}/>
         <Hero/>
@@ -45,7 +49,10 @@ const Home = () => {
         <Newsletter/>
         <Footer/>
       </CartProvider>
-      
+        
+      } catch (error) {
+        navigate('/onlineShop/Shop') 
+      } 
     </main>
   )
 }
