@@ -5,12 +5,17 @@ import { Link } from 'react-router-dom';
 
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
+import { useNavigate } from "react-router-dom";
+
 
 
 const Cart = ({openCart}) => {
+   
+  const navigate = useNavigate()
 
   const handleClick=()=>{
-    openCart(false)
+    openCart(false);
+    navigate('/onlineShop/Shop') 
   }
 
   const {items,
@@ -29,7 +34,7 @@ const Cart = ({openCart}) => {
     return (
       <div className="m-auto text-center">
           <h1 className="font-semibold mb-2">Your Cart is Empty</h1>
-          <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer" onClick={handleClick}>Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link>
+          <button className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer" onClick={handleClick}>Shop Now <FontAwesomeIcon icon={faArrowRight} /></button>
       </div>
     ) 
   } 
