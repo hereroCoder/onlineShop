@@ -89,14 +89,15 @@ const Header = ({changeItems,changeCategory}) => {
             <p className='hidden sm:block text-sm'>Cart</p>
           </div>
 
-        {/* hamburger */}
+
+        {/* hamburger
           {open?(
             <FontAwesomeIcon icon={faXmark} className='text-3xl right-2 z-50 sm:hidden w-4 text-gray-600 hover:cursor-pointer' onClick={showNav}/>
 
           ):(
             <FontAwesomeIcon icon={faBars} className='text-3xl text-gray-600 right-2 z-50 sm:hidden w-4 hover:cursor-pointer ' onClick={showNav}/>
           )
-          }
+          } */}
           
          
         </div>
@@ -112,14 +113,7 @@ const Header = ({changeItems,changeCategory}) => {
       
 
       {/* bottom */}
-      {/* <nav className='hidden sm:flex justify-center w-2/4 items-center gap-6'>
-        <a href="#household" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Household</a>
-        <a href="#self-care" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Skin-Care</a>
-        <a href="#drinks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Drinks</a>
-        <a href="#snacks" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Snacks</a>
-        <a href="#foods" className='hover:bg-gray-100 rounded duration-200 hover:font-semibold px-2'>Dry Foods</a>
-      </nav>
-       */}
+     
 
       {/* cart content */}
       {
@@ -133,6 +127,8 @@ const Header = ({changeItems,changeCategory}) => {
           console.log("")
         )
       }
+      
+      {/* search on small screens */}
       <div className='flex sm:hidden justify-between border-2 bg-slate-100 items-center rounded-full mx-10 '>
          <select name="" id="" className='bg-white p-3 rounded-bl-full rounded-tl-full outline-none ' onChange={(e)=>setSelectedCategory(e.target.value)}>
             <option value="" >All</option>
@@ -152,6 +148,7 @@ const Header = ({changeItems,changeCategory}) => {
         
       </div>
 
+      {/* free shipping promotion */}
       <div className='bg-orange text-white flex justify-center p-2'>
       <p className='hidden md:flex text-center font-semibold text-black capitalize tracking-widest animate-bounce'>UK & Ireland (1 Day Delivery) Free Shipping for orders £50+ Offer ends Soon Hurry!!!</p> 
       <p className='md:hidden text-center font-semibold text-base text-black capitalize tracking-widest'>Free Shipping for orders £50+ </p> 
@@ -162,5 +159,3 @@ const Header = ({changeItems,changeCategory}) => {
 }
 
 export default Header
-
-// id scrolling

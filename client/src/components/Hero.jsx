@@ -34,7 +34,7 @@ const Hero = () => {
         <div className='relative w-full h-96'>
 
           <img src={groceries} alt="" className='w-full h-full object-cover'/>
-           <div className='absolute bottom-0 w-3/4 md:w-2/5 z-5 bg-white p-4 rounded'>
+           <div className='absolute bottom-10 w-3/4 md:w-2/5 z-5 bg-white p-4 rounded'>
             <h1 className='hidden md:flex'>Your Favorite Botswana Shops </h1>
             <h1 className='md:hidden'>All Your Favorites</h1>
             <div className='md:flex hidden justify-evenly my-2 '>
@@ -44,8 +44,7 @@ const Hero = () => {
               <img src={spar} alt=""     className='w-20 h-20 object-fill' />
             </div>
              <p className='text-sm mb-2'>Taste of Botswana in the UK</p>
-
-              <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer">Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link>
+             <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer">Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link>
            
           </div>
 
@@ -55,11 +54,10 @@ const Hero = () => {
       <SwiperSlide>
         <div className='relative w-full h-96'>
           <img src={combo} alt="" className='w-full h-full object-cover md:object-scale-down '/>
-          <div className='absolute bottom-0 z-5 bg-white p-4 rounded'>
+          <div className='absolute bottom-10 z-5 bg-white p-4 rounded'>
             <h1 className='my-2'>Select A Combo</h1>
             <p className='mb-2'>No code neeeded, price as marked</p>
-            
-              <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer">Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link>
+            <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer">Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link>
             
           </div>
 
