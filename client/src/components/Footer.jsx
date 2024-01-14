@@ -39,6 +39,7 @@ const Footer = () => {
       
       </div>
       
+      {/* footer for smaller screen */}
       <div className='sm:hidden'>
           <FooterAccordion/>
       </div>

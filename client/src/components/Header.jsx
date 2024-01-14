@@ -39,7 +39,7 @@ const Header = ({changeItems,changeCategory}) => {
 
 
   return (
-    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white z-50'>
+    <header className='flex flex-col justify-center pb-4 gap-3 sticky top-0 left-0 right-0 bg-white z-50 w-full'>
       {/* top */}
       <div className='bg-blue text-white flex justify-end gap-3 p-2 px-10 md:px-24'>
         <a href="/" className='border-r pr-2 hover:underline'>Sign in</a>
@@ -52,7 +52,7 @@ const Header = ({changeItems,changeCategory}) => {
       {/* middle */}
       <div className='flex justify-between pt-2 items-center px-10 md:px-24'>
         <a href="/">
-           <img src={logo} alt="logo" className='w-28' />
+           <img src={logo} alt="logo" className='w-20 md:w-28' />
         </a>
        
 
@@ -120,17 +120,17 @@ const Header = ({changeItems,changeCategory}) => {
         theCart?(
           <div className='flex fixed justify-star w-full gap-4 h-screen z-50 bg-white py-4 right-0 top-0 overflow-scroll'>
              <Cart showNav={showNav}/>
-            <FontAwesomeIcon icon={faXmark} className='text-3xl w-4  text-gray-600 hover:cursor-pointer' onClick={openCart}/>
+            <FontAwesomeIcon icon={faXmark} className='text-3xl  text-gray-600 hover:cursor-pointer absolute right-5 max-sm:top-2 md:right-10' onClick={openCart}/>
           </div>
          
         ):(
           console.log("")
         )
       }
-      
+
       {/* search on small screens */}
-      <div className='flex sm:hidden justify-between border-2 bg-slate-100 items-center rounded-full mx-10 '>
-         <select name="" id="" className='bg-white p-3 rounded-bl-full rounded-tl-full outline-none ' onChange={(e)=>setSelectedCategory(e.target.value)}>
+      <div className='flex sm:hidden justify-between border-2 bg-slate-100 items-center rounded-full w-4/5 shrink m-auto'>
+         <select name="" id="" className='bg-white rounded-bl-full rounded-tl-full outline-none py-2' onChange={(e)=>setSelectedCategory(e.target.value)}>
             <option value="" >All</option>
             <option value="Grocery" >Grocery</option>
             <option value="Snacks" >Snacks</option>
@@ -138,13 +138,13 @@ const Header = ({changeItems,changeCategory}) => {
             <option value="Drinks" >Drinks</option>
             <option value="Cosmetics" >Cosmetics</option>
           </select>
-          <input 
+             <input 
             type="text" 
-            placeholder='Search for products...' 
-            className='outline-none bg-transparent'
+            placeholder='Search' 
+            className='outline-none bg-transparent p-0 w-1/2'
             onChange={(e)=>setSearchedItems(e.target.value)}
-          />
-         <FontAwesomeIcon icon={faMagnifyingGlass} className='hover:cursor-pointer bg-blue text-white p-3 rounded-full ' onClick={handleClick} />
+          /><FontAwesomeIcon icon={faMagnifyingGlass} className='hover:cursor-pointer bg-blue text-white p-3 rounded-full ' onClick={handleClick} />
+         
         
       </div>
 

@@ -35,27 +35,33 @@ const Cart = ({openCart}) => {
   } 
 
   return (
-    <section className="py-4 container font-lg w-5/6 sm:w-2/4 m-auto h-screen z-10">
-      <div className="flex flex-col justify-center items-center pr-2">
+    <section className="py-4 font-lg w-5/6 md:w-2/4 m-auto text-center h-vh z-10">
+      <div className="flex flex-col justify-center items-center gap-2">
         {/* items */}
         <div className="relative overflow-x-auto w-full">
-          <table className="w-full text-left color-black">
+          <table className="w-full text-left color-black table-fixed">
            {items.map((item,index)=>{
             return(
                <tbody className=" border-gray-200 border">
                 <tr key={index} >
                   <td>
                     <img src={item.imgURL} alt="" className="h-14" />
+                    <p className="capitalize mb-4">{item.name} ({item.size})</p>
                   </td>
-                  <td className="py-8 px-2">{item.name} ({item.size}) </td>
-                  <td className="py-8 px-2 flex">
+
+                  <td className="py-8 px-2 flex flex-col sm:flex-row justify-between items-center">
+                    <div className="flex">
                     <button className="bg-transparent px-2 mr-2 border-blue rounded font-bold text-blue border-2 " onClick={()=>(updateItemQuantity(item.id,item.quantity-1))}>-</button>
 
                     {item.quantity}
 
                     <button className="bg-blue px-2 ml-2 rounded font-bold text-white hover:shadow-2xl shadow-black" onClick={()=>(updateItemQuantity(item.id, item.quantity+1))}>+</button>
+                    </div>
+
+                    <p> £{item.price.toFixed(2)}</p>
+
                   </td>
-                  <td className="py-8 px-2 "> £{item.price.toFixed(2)}</td>
+                  
 
                 </tr>
 

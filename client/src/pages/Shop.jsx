@@ -30,14 +30,16 @@ const Shop = () => {
   const filteredItems = filteredProducts.filter(product=>product.name.toLowerCase().includes(items.toLowerCase()) || product.category.toLowerCase().includes(items.toLowerCase()) )
 
   return (
-    <div>
-     <CartProvider>
+    <main>
+       <CartProvider>
       <Header changeItems={changeItems} changeCategory={changeCategory}/>
       <Link to="/onlineShop" className=" bg-blue top-1/2 py-2 px-6 rounded text-sm font-semibold text-white"><FontAwesomeIcon icon={faArrowLeft} className='mr-2' /> Home</Link>
       <ProductSection products={filteredItems}/>
       <Footer/>
       </CartProvider>
-    </div>  
+    </main>
+    
+   
   )
 }
 

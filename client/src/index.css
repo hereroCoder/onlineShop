@@ -45,7 +45,7 @@
     @apply leading-7 mb-3
   }
 
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
   
       table,
       th,
@@ -53,6 +53,6 @@
         font-size: 12px;
         padding: 2px;
       }
-    }
+    } */
 
 }

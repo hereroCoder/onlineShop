@@ -41,7 +41,7 @@ const Hero = () => {
               <img src={pep} alt=""      className='w-20 h-20 object-fill'  />
               <img src={choppies} alt="" className='w-20 h-20 object-fill' />
               <img src={sefalana} alt="" className='w-20 h-20 object-fill' />
-              <img src={spar} alt=""     className='w-20 h-20 object-fill' />
+              <img src={spar} alt=""    className='w-20 h-20 object-fill' />
             </div>
              <p className='text-sm mb-2'>Taste of Botswana in the UK</p>
              <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer">Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link>
