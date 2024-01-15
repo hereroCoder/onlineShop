@@ -31,7 +31,7 @@ const Cart = ({openCart}) => {
     return (
       <div className="m-auto text-center">
           <h1 className="font-semibold mb-2">Your Cart is Empty</h1>
-         <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer">Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link>
+         {/* <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer">Shop Now <FontAwesomeIcon icon={faArrowRight} /></Link> */}
       </div>
     ) 
   } 
