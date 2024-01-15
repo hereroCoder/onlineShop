@@ -34,7 +34,7 @@ const Cart = ({openCart}) => {
     return (
       <div className="m-auto text-center">
           <h1 className="font-semibold mb-2">Your Cart is Empty</h1>
-          {/* <button className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer" onClick={handleClick}>Shop Now <FontAwesomeIcon icon={faArrowRight} /></button> */}
+          <button className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer" onClick={handleClick}>Shop Now <FontAwesomeIcon icon={faArrowRight} /></button>
       </div>
     ) 
   } 
@@ -100,7 +100,7 @@ const Cart = ({openCart}) => {
          
 
         </div>
-        <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer" onClick={handleClick}>Back to Shopping <FontAwesomeIcon icon={faArrowRight} /></Link>
+        {/* <Link to="/onlineShop/Shop" className=" bg-blue py-2 px-6 rounded font-semibold text-white group-hover:cursor-pointer" onClick={handleClick}>Back to Shopping <FontAwesomeIcon icon={faArrowRight} /></Link> */}
       </div>
     </section>
   )
