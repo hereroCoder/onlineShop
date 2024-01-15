@@ -1,6 +1,6 @@
 # Southern Africa Goodies - An Online Shop
 
-This online shop is a nostalgic journey tailored for those living overseas, seeking to rediscover the taste of Southern African goodies. Built using Vite React, Tailwind CSS, and Font Awesome icons, this single-page website is highly responsive, featuring a functional cart.
+This online shop is a nostalgic journey tailored for those living overseas, seeking to rediscover the taste of Botswana goodies. Built using Vite React, Tailwind CSS, and Font Awesome icons.
 
 ## Features
 
@@ -10,11 +10,7 @@ This online shop is a nostalgic journey tailored for those living overseas, seek
 
 - **Responsive Design**: The website adapts to different screen sizes, ensuring a consistent experience across devices.
 
-- **Hamburger Menu**: Provides easy navigation to different sections of the site for mobile users.
-
 - **Limited Functionality**: Please note that the ordering system is not fully functional. This website does not support actual orders.
-  
-- live at https://hererocoder.github.io/onlineShop/
 
 
 ## Technologies Used
@@ -30,7 +26,7 @@ This online shop is a nostalgic journey tailored for those living overseas, seek
 
 ## Contributions
 
-Contributions might not be applicable at this stage. However, feedback, suggestions, or ideas for future enhancements are always welcome and appreciated!
+Contributions, feedback, suggestions, or ideas for future enhancements are always welcome and appreciated!
 
 ## License
 
