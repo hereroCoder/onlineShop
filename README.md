@@ -1,4 +1,4 @@
-# Southern Africa Goodies - An Online Shop
+# Botswana Online Shop
 
 This online shop is a nostalgic journey tailored for those living overseas, seeking to rediscover the taste of Botswana goodies. Built using Vite React, Tailwind CSS, and Font Awesome icons.
 
