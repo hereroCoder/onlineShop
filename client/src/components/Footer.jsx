@@ -56,7 +56,7 @@ const Footer = () => {
       {/* Copyrights */}
       <div className='flex justify-center items-center gap-1'>
         <FontAwesomeIcon icon={faCopyright} className='text-white' />
-        <p className='text-xs'><script>document.write(new Date().getFullYear())</script> Chibz| All rights reserved| By Wame Chibamo</p>
+        <p className='text-xs'>2024 Chibz| All rights reserved| By Wame Chibamo</p>
       </div>
      
     </footer>
